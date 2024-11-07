@@ -1,10 +1,17 @@
 import type { Metadata } from "next";
+import localFont from "next/font/local";
 import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Triumvirs Academia",
   description: "Welcome to the Triumvirate",
 };
+
+const SFPro = localFont({
+  src: "./fonts/SF-Pro.ttf",
+  variable: "--font-sf-pro",
+  weight: "100 900",
+});
 
 export default function RootLayout({
   children,
@@ -14,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`antialiased`}
+        className={`${SFPro.variable} font-sans antialiased`}
       >
         {children}
       </body>
