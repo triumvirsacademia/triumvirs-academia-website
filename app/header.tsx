@@ -47,7 +47,7 @@ export default function Header() {
     )
 }
 
-function HeaderLink({link, name, current}) {
+function HeaderLink({link, name, current}: {link: string, name: string, current: boolean}) {
     return (
         <Link href={link} className={`${current ? "blue" : "text-3xl"}`}>
             <div className="text-3xl font-medium tracking-[-0.06em] leading-[22px] ml-12">
