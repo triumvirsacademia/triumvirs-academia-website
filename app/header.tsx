@@ -1,5 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
+import Underline from "./nav-link";
+
 
 class NewLink {
     name: string;
@@ -21,38 +23,40 @@ const links = [
 ]
 
 export default function Header() {
+
     return (
         <>
-            <div className="flex justify-between items-center">
-                <div className="pl-8">
+            <div className="flex justify-between items-center border-b border-black z-0">
+                <div className="pl-32">
                     <Link href={"/"}>
-                        <div className="relative lg:w-32 lg:h-32">
-                            <Image
-                                src="/triumvirs_academia_logo_clear.png"
-                                fill={true}
-                                alt="Triumvirs Academia Logo"
-                            />
+                        <div className="flex items-center">
+                            <div className="relative lg:w-32 lg:h-32">
+                                <Image
+                                    src="/triumvirs_academia_logo_clear.png"
+                                    fill={true}
+                                    alt="Triumvirs Academia Logo"
+                                    />
+                            </div>
+                            <div className="font-serif ml-4 pt-1 text-4xl tracking-[-0.06em]">
+                                Triumvirs Academia
+                            </div>
                         </div>
                     </Link>
                 </div>
-                <div className="flex border-b border-black h-fit pl-20 pr-32">
+                <div className="flex pl-8 pr-32">
                     {
                         links.map((x, index) => (
-                            <HeaderLink key={index} link={x.link} name={x.name} current={x.current} />
+                            <div key={index} className="font-serif text-3xl tracking-[-0.06em] ml-12">
+                                <Link href={x.link} className="relative group w-32 h-32 border border-transparent hover:border-transparent overflow-hidden">
+                                    {x.name}
+                                    <Underline href={x.link} className="absolute bottom-0 left-0 w-full h-[1px] bg-black transform translate-y-[47px] transition-transform duration-700 ease-in-out group-hover:translate-y-[10px] z-20 [&.active]:translate-y-[10px]" />
+                                    <span className="absolute bottom-0 left-0 w-full h-[1px] bg-white transform translate-y-[47px] z-10"></span>
+                                </Link>
+                            </div>
                         ))
                     }
                 </div>
             </div>
         </>
-    )
-}
-
-function HeaderLink({link, name, current}: {link: string, name: string, current: boolean}) {
-    return (
-        <Link href={link} className={`${current ? "blue" : "text-3xl"}`}>
-            <div className="text-3xl font-medium tracking-[-0.06em] leading-[22px] ml-12">
-                {name}
-            </div>
-        </Link>
     )
 }

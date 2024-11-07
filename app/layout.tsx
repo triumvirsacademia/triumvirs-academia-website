@@ -13,6 +13,12 @@ const SFPro = localFont({
   weight: "100 900",
 });
 
+const NewYork = localFont({
+  src: "./fonts/NewYork.ttf",
+  variable: "--font-new-york",
+  weight: "100 900",
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -21,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${SFPro.variable} font-sans antialiased`}
+        className={`${SFPro.variable} ${NewYork.variable} font-sans antialiased`}
       >
         {children}
       </body>

@@ -14,7 +14,11 @@ const config: Config = {
       },
       fontFamily: {
         sans: ['var(--font-sf-pro)'],
+        serif: ['var(--font-new-york)'],
       },
+      letterSpacing: {
+        tightest: '-.06em',
+      }
     },
   },
   plugins: [],
