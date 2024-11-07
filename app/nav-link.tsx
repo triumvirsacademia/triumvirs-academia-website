@@ -1,13 +1,11 @@
 'use client'
 
 import { usePathname } from 'next/navigation'
-import Link from 'next/link'
 
 export default function Underline({
   href,
   exact = false,
   className,
-  ...props
 }: {
   href: string
   exact?: boolean
