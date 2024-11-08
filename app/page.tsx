@@ -3,7 +3,7 @@ import Image from "next/image"
 export default function Home() {
     return (
         <>
-            <div className="relative">
+            <div className="relative h-[100vh]">
                 <div className="absolute top-10 left-20 w-[calc(40vw/3)] h-[calc(40vw/3)] 3xl:h-64 3xl:w-64">
                     <Image src="/triumvirs_academia_logo_clear.png" alt="Triumvirs Academia Logo" fill={true} />
                 </div>
@@ -26,9 +26,22 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="absolute h-fit -bottom-[80vh] w-[100vw] flex justify-center">
-                    <div className="font-serif text-4xl tracking-[-0.06em]">
-                        Trademark Slogan
+                <div className="absolute h-fit bottom-[4rem] w-[100vw] flex justify-center">
+                    <div className="w-full max-w-6xl mx-auto px-4 md:px-6 py-24">
+                        <div className="text-center">                            
+                            <div className="font-serif text-3xl md:text-4xl">A reinvention of  
+                                <span className="inline-flex flex-col h-[calc(theme(fontSize.3xl)*theme(lineHeight.tight))] md:h-[calc(theme(fontSize.4xl)*theme(lineHeight.tight))] overflow-hidden">
+                                    <ul className="pl-3 block animate-text-slide text-left leading-tight [&_li]:block">
+                                        <li>education</li>
+                                        <li>mentorship</li>
+                                        <li>communication</li>
+                                        <li>mindset</li>
+                                        <li>achievement</li>
+                                        <li aria-hidden="true">education</li>
+                                    </ul>
+                                </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
