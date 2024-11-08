@@ -13,3 +13,9 @@
     --foreground: #ededed;
   }
 }
+
+@property --border-angle {
+  inherits: false;
+  initial-value: 0deg;
+  syntax: '<angle>';
+}

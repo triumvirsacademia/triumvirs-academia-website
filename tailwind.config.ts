@@ -11,6 +11,7 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        accent: '#74A1C4',
       },
       fontFamily: {
         sans: ['var(--font-sf-pro)'],
@@ -21,6 +22,7 @@ const config: Config = {
       },
       animation: {
         'text-slide': 'text-slide 12.5s cubic-bezier(0.83, 0, 0.17, 1) infinite',
+        'border': 'border 4s linear infinite',
       },
       keyframes: {
           'text-slide': {
@@ -42,12 +44,14 @@ const config: Config = {
               '100%': {
                   transform: 'translateY(-83.33%)',
               },
+          },
+          'border': {
+                    to: { '--border-angle': '360deg' },
           },                    
       },
     },
   },
   screens: {
-
     '3xl': '1920px',
     // => @media (min-width: 1280px) { ... }
   },

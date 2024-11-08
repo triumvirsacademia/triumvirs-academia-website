@@ -1,13 +1,14 @@
 import Image from "next/image"
+import SubjectList from "./subject-list"
 
 export default function Home() {
     return (
         <>
-            <div className="relative h-[100vh]">
+            <div className="relative h-screen">
                 <div className="absolute top-10 left-20 w-[calc(40vw/3)] h-[calc(40vw/3)] 3xl:h-64 3xl:w-64">
                     <Image src="/triumvirs_academia_logo_clear.png" alt="Triumvirs Academia Logo" fill={true} />
                 </div>
-                <div className="absolute flex h-[100vh] w-[100vw] justify-center items-center">
+                <div className="absolute flex h-screen w-screen justify-center items-center">
                     <div>
                         <div className="flex w-[884px] justify-between h-[10.75rem]">
                             <div className="relative text-[9rem]  font-bold tracking-tighter">Triumvirs
@@ -26,10 +27,10 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="absolute h-fit bottom-[4rem] w-[100vw] flex justify-center">
+                <div className="absolute h-fit bottom-[4rem] w-screen flex justify-center">
                     <div className="w-full max-w-6xl mx-auto px-4 md:px-6 py-24">
                         <div className="text-center">                            
-                            <div className="font-serif text-3xl md:text-4xl">A reinvention of  
+                            <div className="font-serif tracking-tighter text-3xl md:text-4xl">A reinvention of  
                                 <span className="inline-flex flex-col h-[calc(theme(fontSize.3xl)*theme(lineHeight.tight))] md:h-[calc(theme(fontSize.4xl)*theme(lineHeight.tight))] overflow-hidden">
                                     <ul className="pl-3 block animate-text-slide text-left leading-tight [&_li]:block">
                                         <li>education</li>
@@ -45,6 +46,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+            <SubjectList />
         </>
     )
 }
