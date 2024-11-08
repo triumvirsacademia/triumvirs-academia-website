@@ -21,6 +21,11 @@ const config: Config = {
       }
     },
   },
+  screens: {
+
+    '3xl': '1920px',
+    // => @media (min-width: 1280px) { ... }
+  },
   plugins: [],
 };
 export default config;
