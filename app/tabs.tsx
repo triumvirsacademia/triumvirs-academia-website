@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, Fragment } from "react";
-import Image from "next/image";
 import { TabGroup, Tab, TabList, TabPanel, TabPanels } from "@headlessui/react";
 import { Transition } from "@headlessui/react";
 
