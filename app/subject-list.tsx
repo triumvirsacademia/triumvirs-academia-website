@@ -9,19 +9,19 @@ import Tabs from './tabs'
       title: 'Mathematics',
       tag: 'VCE & Olympiad',
       excerpt: "Often the area of expertise of most, yet never the area of most confidence. It is not the mathematics that is hard, it is your mindset that needs to be hardened.",
-      link: '#0'
+      link: '/academia#mathematics'
     },
     {
       title: 'Science',
       tag: 'VCE & Olympiad',
       excerpt: "The often overlooked side of STEM minds, science is always a newer field for most. But you should not be new to achieving great things in science.",
-      link: '#0'
+      link: '/academia#science'
     },
     {
       title: 'Other',
       tag: 'VCE & University',
       excerpt: "The place for those who are lost (everyone). Guiding English to Economics and miscellaneous decisions for the future, you will finally be able to fully understand yourself.",
-      link: '#0'
+      link: '/academia#other'
     },
   ]
   

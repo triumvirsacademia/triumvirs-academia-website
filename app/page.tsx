@@ -15,18 +15,21 @@ export default function Home() {
                                 <span className="absolute -left-10 bottom-[0.75rem] h-[0.0625rem] bg-black w-[42rem]"></span>
                             </div>
                         </div>
-                        <div className="flex w-[884px] justify-between h-[10.75rem] items-end">
-                            <div className="border-r border-black"></div>
+                        <div className="relative flex w-[884px] justify-between h-[10.75rem] items-end">
+                            <div></div>
                             <div>
-                                <div className="relative text-[9rem] font-bold tracking-tighter">
-                                    Academia
+                                <div className="relative">
+                                    <div className="text-[9rem] font-bold tracking-tighter">Academia</div>
                                     <span className="absolute -left-10 bottom-[3.5rem] h-[0.0625rem] bg-black w-[42rem]"></span>
                                     <span className="absolute left-0 bottom-[1rem] h-[10.5rem] bg-black w-[0.0625rem]"></span>
+                                    <div className="absolute right-8 bottom-24 h-64 w-64 rounded-full bg-gradient-to-r from-[#737373] to-[#D9D9D9] mix-blend-difference"></div>
+                                    <span className="absolute bottom-[22rem] right-40 h-[50vh] bg-black w-[0.0625rem]"></span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                    <span className="absolute right-10 -bottom-[0.0625rem] h-[6.125rem] bg-black w-[0.0625rem]"></span>
                 <div className="absolute h-fit bottom-[4rem] w-screen flex justify-center">
                     <div className="w-full max-w-6xl mx-auto px-4 md:px-6 py-24">
                         <div className="text-center">                            

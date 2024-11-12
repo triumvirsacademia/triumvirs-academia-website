@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${SFPro.variable} ${NewYork.variable} font-sans antialiased`}
+        className={`${SFPro.variable} ${NewYork.variable} font-sans antialiased bg-white`}
       >
         {children}
       </body>

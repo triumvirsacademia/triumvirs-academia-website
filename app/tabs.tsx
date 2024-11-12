@@ -14,16 +14,20 @@ interface Tab {
 export default function Tabs({ tabs }: { tabs: Tab[] }) {
   const [selectedTab, setSelectedTab] = useState<number>(0);
 
+  const state = (index: number) => {
+      
+  }
+
   return (
     <TabGroup selectedIndex={selectedTab} onChange={setSelectedTab}>
       <div>
         {/* Buttons */}
         <div className="flex justify-center">
-          <TabList className="mb-8 inline-flex flex-wrap justify-center rounded-xl bg-accent p-1 max-[480px]:max-w-[180px] min-[480px]:mb-12">
+          <TabList className="mb-8 inline-flex flex-wrap justify-center rounded-xl p-1 max-[480px]:max-w-[180px] min-[480px]:mb-12">
             {tabs.map((tab, index) => (
               <Tab key={index} as={Fragment}>
                 <button
-                  className={`h-8 flex-1 whitespace-nowrap rounded-lg px-4 text-sm font-medium transition-colors duration-150 ease-in-out focus-visible:outline-none ui-focus-visible:outline-none ui-focus-visible:ring ui-focus-visible:ring-indigo-300 ${selectedTab === index ? "bg-white text-black" : "text-white hover:text-black"}}`}
+                  className={`h-8 flex-1 whitespace-nowrap px-4 ${index !== 0 ? "border-l border-l-black" : ""} font-serif text-xl tracking-tighter transition-colors duration-150 ease-in-out focus-visible:outline-none ui-focus-visible:outline-none decoration-accent ${selectedTab === index ? "underline underline-offset-4" : ""}}`}
                 >
                   {tab.title}
                 </button>
@@ -68,7 +72,6 @@ export default function Tabs({ tabs }: { tabs: Tab[] }) {
                                     <path fillRule="evenodd" d="M6.22 4.22a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06L8.94 8 6.22 5.28a.75.75 0 0 1 0-1.06Z" clipRule="evenodd" />
                                 </svg>
                             </div>
-
                         </a>
                       </div>
                     </div>

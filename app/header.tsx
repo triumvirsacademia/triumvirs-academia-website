@@ -37,7 +37,7 @@ export default function Header() {
                                     alt="Triumvirs Academia Logo"
                                     />
                             </div>
-                            <div className="font-serif ml-4 pt-1 text-4xl tracking-[-0.06em]">
+                            <div className="font-serif ml-4 pt-1 text-4xl tracking-tighter">
                                 Triumvirs Academia
                             </div>
                         </div>
@@ -49,7 +49,7 @@ export default function Header() {
                             <div key={index} className="font-serif text-3xl tracking-[-0.06em] ml-12">
                                 <Link href={x.link} className="relative group w-32 h-32 border border-transparent hover:border-transparent overflow-hidden">
                                     {x.name}
-                                    <Underline href={x.link} className="absolute bottom-0 left-0 w-full h-[1px] bg-black transform translate-y-[47px] transition-transform duration-700 ease-in-out group-hover:translate-y-[10px] z-20 [&.active]:translate-y-[10px]" />
+                                    <Underline href={x.link} className="absolute bottom-0 left-0 w-full h-[1px] bg-black transform translate-y-[47px] transition-transform duration-700 ease-in-out group-hover:translate-y-[10px] group-hover:bg-accent z-20 [&.active]:translate-y-[10px] [&.active]:bg-accent" />
                                     <span className="absolute bottom-0 left-0 w-full h-[1px] bg-white transform translate-y-[47px] z-10"></span>
                                 </Link>
                             </div>
