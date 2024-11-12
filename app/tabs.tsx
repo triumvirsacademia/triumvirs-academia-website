@@ -14,10 +14,6 @@ interface Tab {
 export default function Tabs({ tabs }: { tabs: Tab[] }) {
   const [selectedTab, setSelectedTab] = useState<number>(0);
 
-  const state = (index: number) => {
-      
-  }
-
   return (
     <TabGroup selectedIndex={selectedTab} onChange={setSelectedTab}>
       <div>
