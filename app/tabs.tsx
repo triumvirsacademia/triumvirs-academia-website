@@ -3,6 +3,7 @@
 import { useState, Fragment } from "react";
 import { TabGroup, Tab, TabList, TabPanel, TabPanels } from "@headlessui/react";
 import { Transition } from "@headlessui/react";
+import Link from "next/link";
 
 interface Tab {
   title: string;
@@ -23,7 +24,7 @@ export default function Tabs({ tabs }: { tabs: Tab[] }) {
             {tabs.map((tab, index) => (
               <Tab key={index} as={Fragment}>
                 <button
-                  className={`h-8 flex-1 whitespace-nowrap px-4 ${index !== 0 ? "border-l border-l-black" : ""} font-serif text-xl tracking-tighter transition-colors duration-150 ease-in-out focus-visible:outline-none ui-focus-visible:outline-none decoration-accent ${selectedTab === index ? "underline underline-offset-4" : ""}}`}
+                  className={`h-8 flex-1 whitespace-nowrap px-4 ${index !== 0 ? "border-l border-l-black" : ""} font-serif text-xl tracking-tighter transition-colors duration-150 ease-in-out focus-visible:outline-none ui-focus-visible:outline-none decoration-accent ${selectedTab === index ? "underline underline-offset-[1rem]" : ""}}`}
                 >
                   {tab.title}
                 </button>
@@ -58,7 +59,7 @@ export default function Tabs({ tabs }: { tabs: Tab[] }) {
                         {tab.excerpt}
                       </div>
                       <div className="text-right">
-                        <a
+                        <Link
                           className="text-lg font-medium tracking-tighter transition-colors duration-150 ease-out hover:text-accent focus-visible:outline-none focus-visible:ring focus-visible:ring-accent"
                           href={tab.link}
                         >
@@ -68,7 +69,7 @@ export default function Tabs({ tabs }: { tabs: Tab[] }) {
                                     <path fillRule="evenodd" d="M6.22 4.22a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06L8.94 8 6.22 5.28a.75.75 0 0 1 0-1.06Z" clipRule="evenodd" />
                                 </svg>
                             </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </article>
