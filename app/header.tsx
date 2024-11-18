@@ -26,7 +26,7 @@ export default function Header() {
 
     return (
         <>
-            <div className="flex justify-between items-center border-b border-black z-0">
+            <div className="flex justify-between items-center border-b border-black z-0 bg-white">
                 <div className="pl-32">
                     <Link href={"/"}>
                         <div className="flex items-center">
