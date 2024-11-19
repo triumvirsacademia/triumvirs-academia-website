@@ -3,8 +3,8 @@ import SignUpForm from "./form"
 
 export default function SignUp() {
     return (
-        <div>
-            <div className="mb-8">
+        <div className="py-32">
+            {/* <div className="mb-8">
                 <div className="flex justify-center items-center h-64 py-48 bg-white">
                     <div className="relative">
                         <h1 className="text-[9rem] font-bold tracking-tighter">Sign Up</h1>
@@ -15,8 +15,8 @@ export default function SignUp() {
                     </div>
                     <div className="w-[10vw]"></div>
                 </div>
-            </div>
-            <SignUpForm />
+            </div> */}
+            <SignUpForm  />
         </div>
     )
 }

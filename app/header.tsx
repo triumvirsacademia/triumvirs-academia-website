@@ -50,7 +50,7 @@ export default function Header() {
                                 <Link href={x.link} className="relative group w-32 h-32 border border-transparent hover:border-transparent overflow-hidden">
                                     {x.name}
                                     <Underline href={x.link} className="absolute bottom-0 left-0 w-full h-[1px] bg-black transform translate-y-[47px] transition-transform duration-700 ease-in-out group-hover:translate-y-[10px] group-hover:bg-accent z-20 [&.active]:translate-y-[10px] [&.active]:bg-accent" />
-                                    <span className="absolute bottom-0 left-0 w-full h-[1px] bg-white transform translate-y-[47px] z-10"></span>
+                                    <span className="absolute bottom-0 left-0 w-full h-[2px] bg-white transform translate-y-[47px] z-10"></span>
                                 </Link>
                             </div>
                         ))
