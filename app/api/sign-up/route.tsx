@@ -2,7 +2,7 @@
 import { NextResponse } from 'next/server';
 import { addToDatabase } from '../../lib/notion';
 
-export async function POST(req: { json: () => PromiseLike<{ firstName: any; lastName: any; email: any; phoneNumber: any; school: any; intYear: any; }> | { firstName: any; lastName: any; email: any; phoneNumber: any; school: any; intYear: any; }; }) {
+export async function POST(req: { json: () => PromiseLike<{ firstName: string; lastName: string; email: string; phoneNumber: string; school: string; intYear: number; }> | { firstName: string; lastName: string; email: string; phoneNumber: string; school: string; intYear: number; }; }) {
   console.log("received")
   try {
     const { firstName, lastName, email, phoneNumber, school, intYear } = await req.json();

@@ -16,7 +16,7 @@ const SignUpForm = () => {
     e.preventDefault();
     setStatus('loading');
 
-    let intYear = parseInt(yearLevel)
+    const intYear = parseInt(yearLevel)
 
     const res = await fetch('/api/sign-up', {
       method: 'POST',
