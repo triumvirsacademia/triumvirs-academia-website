@@ -161,22 +161,17 @@ const SignUpForm = () => {
   </div>
   <div className='flex justify-center items-center'>
 
-    <div className='p-8 border border-black w-72 h-32 rounded-[4rem] flex justify-center items-center bg-white z-10'>
+    <div className='p-8 border border-black w-fit h-32 rounded-[4rem] flex justify-center items-center bg-white z-10'>
 
             <button type="submit" className="text-7xl font-bold tracking-tighter hover:text-accent">
-            Register
+            {status === 'success' && <p>Welcome to the Triumvirate.</p>}
+            {status === 'error' && <p>An error occurred. Please try again.</p>}
+            {status === 'loading' && <p>Signing up...</p>}
+            {status === '' && <p>Register</p>}
             </button>
     </div>
   </div>
       </form>
-
-      {status === 'success' && (
-        <p className="text-green-500 mt-4">Thank you for your message!</p>
-      )}
-      {status === 'error' && (
-        <p className="text-red-500 mt-4">An error occurred. Please try again.</p>
-      )}
-      {status === 'loading' && <p className="text-blue-500 mt-4">Sending...</p>}
     </div>
   );
 };

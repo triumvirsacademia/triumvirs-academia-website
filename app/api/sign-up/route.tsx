@@ -2,10 +2,9 @@
 import { NextResponse } from 'next/server';
 import { addToDatabase } from '../../lib/notion';
 
-export async function POST(req: { json: () => PromiseLike<{ firstName: string; lastName: string; email: string; phoneNumber: string; school: string; intYear: number; }> | { firstName: string; lastName: string; email: string; phoneNumber: string; school: string; intYear: number; }; }) {
-  console.log("received")
+export async function POST(request: Request) {
   try {
-    const { firstName, lastName, email, phoneNumber, school, intYear } = await req.json();
+    const { firstName, lastName, email, phoneNumber, school, intYear } = await request.json();
 
     // Add data to Notion database
     await addToDatabase(firstName, lastName, email, phoneNumber, school, intYear);
