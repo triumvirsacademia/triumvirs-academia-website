@@ -19,7 +19,7 @@ const links = [
     new NewLink("About", "/about"),
     new NewLink("Academia", "/academia"),
     new NewLink("Resources", "/resources"),
-    new NewLink("Contact", "/contact"),
+    new NewLink("Sign Up", "/sign-up"),
 ]
 
 export default function Header() {
