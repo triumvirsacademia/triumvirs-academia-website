@@ -159,6 +159,23 @@ const SignUpForm = () => {
       required
     />
   </div>
+    <div className='flex justify-center py-16'>
+        <div className='w-[10vw]'></div>
+        <div className='w-[50vw]'>
+            <div className='relative mb-8'>
+                <h1 className='text-5xl font-semibold tracking-tighter'>Subjects</h1>
+                <span className="absolute -left-8 bottom-[0.375rem] h-[0.0625rem] bg-black w-64"></span>
+                <span className="absolute left-[0.0625rem] -bottom-2 h-16 bg-black w-[0.0625rem]"></span>
+            </div>
+            <h2 className='text-4xl font-semibold tracking-tighter'>Mathematics</h2>
+            <div className='grid grid-cols-2'>
+                <SubjectSelector name='Specialist Mathematics 34'/>
+                <SubjectSelector name='Specialist Mathematics 12'/>
+                <SubjectSelector name='Mathematical Methods 34'/>
+                <SubjectSelector name='Mathematical Methods 12'/>
+            </div>
+        </div>
+    </div>
   <div className='flex justify-center items-center mt-16'>
     <div className='w-[20vw]'></div>
     <div className='relative w-[40vw] flex justify-end'>
@@ -181,3 +198,13 @@ const SignUpForm = () => {
 };
 
 export default SignUpForm;
+
+const SubjectSelector = ({name}: {name: string}) => {
+    const [active, setActive] = useState(false)
+    return (
+        <div>
+
+            <button onClick={() => setActive(!active)} className={`text-3xl font-serif tracking-tighter ${active ? "text-accent" : "line-through"}`}>{name}</button>
+        </div>
+    )
+}
