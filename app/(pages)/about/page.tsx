@@ -69,7 +69,7 @@ export default function About() {
                         <ul className="pl-8 pt-4 pb-6">
                             <li className="text-3xl font-medium tracking-tighter">English <span className="font-normal font-serif">TBC</span></li>
                             <li className="text-3xl font-medium tracking-tighter">Specialist Mathematics <span className="font-normal font-serif">TBC</span></li>
-                            <li className="text-3xl font-medium tracking-tighter">Mathematical Methods <span className="font-normal font-serif">50 (Premier's)</span></li>
+                            <li className="text-3xl font-medium tracking-tighter">Mathematical Methods <span className="font-normal font-serif">50 (Premier&apos;s)</span></li>
                             <li className="text-3xl font-medium tracking-tighter">Biology <span className="font-normal font-serif">TBC</span></li>
                             <li className="text-3xl font-medium tracking-tighter">Chemistry <span className="font-normal font-serif">TBC</span></li>
                             <li className="text-3xl font-medium tracking-tighter">Physics <span className="font-normal font-serif">TBC</span></li>
@@ -103,7 +103,7 @@ export default function About() {
                         <ul className="pl-8 pt-4 pb-6">
                             <li className="text-3xl font-medium tracking-tighter">English Language <span className="font-normal font-serif">TBC</span></li>
                             <li className="text-3xl font-medium tracking-tighter">Specialist Mathematics <span className="font-normal font-serif">TBC</span></li>
-                            <li className="text-3xl font-medium tracking-tighter">Mathematical Methods <span className="font-normal font-serif">50 (Premier's)</span></li>
+                            <li className="text-3xl font-medium tracking-tighter">Mathematical Methods <span className="font-normal font-serif">50 (Premier&apos;s)</span></li>
                             <li className="text-3xl font-medium tracking-tighter">Chinese as a Second Language <span className="font-normal font-serif">43</span></li>
                             <li className="text-3xl font-medium tracking-tighter">Chemistry <span className="font-normal font-serif">TBC</span></li>
                             <li className="text-3xl font-medium tracking-tighter">Physics <span className="font-normal font-serif">TBC</span></li>
