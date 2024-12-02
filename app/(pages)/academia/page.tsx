@@ -3,7 +3,7 @@ import SubjectCard from "./subject-card"
 export default function Academia() {
     return (
         <div>
-            <div className="mb-8">
+            <div className="mb-16">
                 <div className="flex justify-center items-center h-64 py-48 bg-white">
                     <div className="relative">
                         <h1 className="text-[9rem] font-bold tracking-tighter">Academia</h1>
@@ -14,11 +14,12 @@ export default function Academia() {
                     </div>
                     <div className="w-[10vw]"></div>
                 </div>
-                <div className="flex flex-col justify-center items-center px-8 xl:px-64">
-                    <p className="text-2xl font-medium tracking-tighter mb-4">Triumvirs Academia is run by <span className="font-serif font-normal text-accent">students</span> for <span className="font-serif font-normal text-accent">students</span>. A <span className="font-serif font-normal text-accent">new</span> way of approaching learning. Gone are the days of messy resources, confusing money-back guarantees and an environment where teachers take all the credit for the good outcomes, and push the blame for bad outcomes onto students.</p>
-                    <p className="text-2xl font-medium tracking-tighter">Offering a <span className="font-serif font-normal text-accent">wide</span> variety of disciplines, education has never been more <span className="font-serif font-normal text-accent">integrated</span> between those learning and those teaching. <span className="font-serif font-normal text-accent">Understanding</span> the struggle of students is the most important value at Triumvirs Academia, so let us build a <span className="font-serif font-normal text-accent">new</span> pathway to achievement.</p>
-                </div>
             </div>
+            <section>
+                <div className="flex flex-col justify-center items-center">
+                    <p className="text-2xl font-medium tracking-tighter mb-4 w-[60vw] 3xl:w-[72rem]">We offer quite a wide variety of subjects.</p>
+                </div>
+            </section>
             <section className="mb-8 py-16" id="mathematics">
                 <div className="flex justify-center items-center h-32 my-16">
                     <div className="relative">
@@ -78,4 +79,8 @@ export default function Academia() {
             </section>
         </div>
     )
+}
+
+function C({children}: {children: React.ReactNode}) {
+    return(<span className="text-accent">{children}</span>)
 }

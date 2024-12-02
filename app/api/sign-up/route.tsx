@@ -4,10 +4,10 @@ import { addToDatabase } from '../../lib/notion';
 
 export async function POST(request: Request) {
   try {
-    const { firstName, lastName, email, phoneNumber, school, intYear } = await request.json();
+    const { firstName, lastName, email, phoneNumber, school, intYear, subjects } = await request.json();
 
     // Add data to Notion database
-    await addToDatabase(firstName, lastName, email, phoneNumber, school, intYear);
+    await addToDatabase(firstName, lastName, email, phoneNumber, school, intYear, subjects);
 
     return NextResponse.json({ status: 'success' }, { status: 200 });
   } catch (error) {

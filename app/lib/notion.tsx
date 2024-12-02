@@ -3,7 +3,7 @@ import { Client } from '@notionhq/client';
 const notion = new Client({ auth: "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" });
 const database_id: string = "14259840e7c18089b3c1d60ca8536f03";
 
-export const addToDatabase = async (first_name: string, last_name: string, email: string, phone_number: string, school: string, year_level: number) => {
+export const addToDatabase = async (first_name: string, last_name: string, email: string, phone_number: string, school: string, year_level: number, subjects: string[]) => {
   try {
 
     const response = await notion.pages.create({
@@ -47,6 +47,9 @@ export const addToDatabase = async (first_name: string, last_name: string, email
         },
         "year_level": {
             number: year_level,
+        },
+        "subjects": {
+          multi_select: subjects.map((subject: string) => ({ name: subject })),
         }
       },
     });

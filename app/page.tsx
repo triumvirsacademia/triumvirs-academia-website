@@ -50,7 +50,7 @@ export default function Home() {
                 <span className="absolute bottom-24 h-[0.0625rem] bg-black w-[50vw] left-0"></span>
                 <div className="w-screen flex justify-center items-center">
                     <div className="rounded-[8rem] border border-black h-64 w-96 bg-white z-10 flex justify-center items-center">
-                        <p className="text-[8rem] font-serif font-bold bg-gradient-to-r from-black via-[#682D6A] via-30% to-[#BD19C2] bg-clip-text text-transparent">99.95</p>
+                        <p className="text-9xl font-serif font-bold bg-gradient-to-r from-black via-[#682D6A] via-30% to-[#BD19C2] bg-clip-text text-transparent">$50</p>
                     </div>
                 </div>
                 <span className="absolute top-24 h-[0.0625rem] bg-black w-[50vw] right-0"></span>

@@ -1,4 +1,3 @@
-// components/ContactForm.js
 'use client';
 
 import { useState } from 'react';
@@ -11,19 +10,29 @@ const SignUpForm = () => {
   const [school, setSchool] = useState('');
   const [yearLevel, setYearLevel] = useState('');
   const [status, setStatus] = useState('');
+  const [selectedOptions, setSelectedOptions] = useState<string[]>([]);
+
+  const options = [
+    "Specialist Mathematics 34",
+    "Mathematical Methods 34",
+    "Biology 34",
+    "Chemistry 34",
+    "Physics 34",
+    "Economics 34",
+  ]
 
   const handleSubmit = async (e: { preventDefault: () => void; }) => {
     e.preventDefault();
     setStatus('loading');
 
-    const intYear = parseInt(yearLevel)
+    const intYear = Number(yearLevel)
 
     const res = await fetch('/api/sign-up', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ firstName, lastName, email, phoneNumber, school, intYear }),
+      body: JSON.stringify({ firstName, lastName, email, phoneNumber, school, intYear, subjects: selectedOptions }),
     });
 
     if (res.ok) {
@@ -34,6 +43,7 @@ const SignUpForm = () => {
       setPhoneNumber('');
       setSchool('');
       setYearLevel('');
+      setSelectedOptions([]);
     } else {
       setStatus('error');
     }
@@ -117,7 +127,7 @@ const SignUpForm = () => {
       placeholder='0412356789'
       value={phoneNumber}
       onChange={(e) => setPhoneNumber(e.target.value)}
-      className="ml-4 w-96 text-3xl font-serif tracking-tighter focus:outline-none" // Adjust as needed
+      className="ml-4 w-96 text-3xl font-serif tracking-tighter focus:outline-none" 
       required
     />
   </div>
@@ -136,7 +146,7 @@ const SignUpForm = () => {
       placeholder='Triumvirate'
       value={school}
       onChange={(e) => setSchool(e.target.value)}
-      className="ml-4 w-96 text-3xl font-serif tracking-tighter focus:outline-none" // Adjust as needed
+      className="ml-4 w-96 text-3xl font-serif tracking-tighter focus:outline-none" 
       required
     />
   </div>
@@ -155,7 +165,7 @@ const SignUpForm = () => {
       placeholder='12'
       value={yearLevel}
       onChange={(e) => setYearLevel(e.target.value)}
-      className="ml-4 w-96 text-3xl font-serif tracking-tighter focus:outline-none" // Adjust as needed
+      className="ml-4 w-96 text-3xl font-serif tracking-tighter focus:outline-none" 
       required
     />
   </div>
@@ -167,12 +177,28 @@ const SignUpForm = () => {
                 <span className="absolute -left-8 bottom-[0.375rem] h-[0.0625rem] bg-black w-64"></span>
                 <span className="absolute left-[0.0625rem] -bottom-2 h-16 bg-black w-[0.0625rem]"></span>
             </div>
-            <h2 className='text-4xl font-semibold tracking-tighter'>Mathematics</h2>
-            <div className='grid grid-cols-2'>
-                <SubjectSelector name='Specialist Mathematics 34'/>
-                <SubjectSelector name='Specialist Mathematics 12'/>
-                <SubjectSelector name='Mathematical Methods 34'/>
-                <SubjectSelector name='Mathematical Methods 12'/>
+            <div className="grid grid-cols-2">
+                {options.map((option) => (
+                    <div key={option}>
+                    <button
+                    type="button"
+                    className={`text-3xl font-serif tracking-tighter ${
+                        selectedOptions.includes(option)
+                        ? "text-accent"
+                        : "line-through"
+                    }`}
+                    onClick={() =>
+                        setSelectedOptions((prev) =>
+                        prev.includes(option)
+                            ? prev.filter((o) => o !== option)
+                            : [...prev, option]
+                        )
+                    }
+                    >
+                    {option}
+                    </button>
+                    </div>
+                ))}
             </div>
         </div>
     </div>
@@ -198,13 +224,3 @@ const SignUpForm = () => {
 };
 
 export default SignUpForm;
-
-const SubjectSelector = ({name}: {name: string}) => {
-    const [active, setActive] = useState(false)
-    return (
-        <div>
-
-            <button onClick={() => setActive(!active)} className={`text-3xl font-serif tracking-tighter ${active ? "text-accent" : "line-through"}`}>{name}</button>
-        </div>
-    )
-}
