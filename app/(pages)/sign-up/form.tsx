@@ -161,6 +161,8 @@ const SignUpForm = () => {
     </div>
     <input
       type="number"
+      min={1}
+      max={12}
       name="year-level"
       placeholder='12'
       value={yearLevel}

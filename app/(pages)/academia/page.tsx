@@ -33,9 +33,6 @@ export default function Academia() {
                     <SubjectCard title="Specialist Mathematics" unit="34" link="#0">We are specialists specialising in special students specialising in Specialist Mathematics.</SubjectCard>
                     <SubjectCard title="Mathematical Methods" unit="34" link="#0">We are methodologists methodically crafting methodologies to cover the methods of Mathematical Methods.</SubjectCard>
                     <SubjectCard title="UMEP Mathematics" unit="EX" link="#0">Triumvirs Academia vows to uphold our prowess in the field of mathematics.</SubjectCard>
-                    <SubjectCard title="Specialist Mathematics" unit="12" link="#0">We are specialists specialising in special students specialising in Specialist Mathematics.</SubjectCard>
-                    <SubjectCard title="Mathematical Methods" unit="12" link="#0">We are methodologists methodically crafting methodologies to cover the methods of Mathematical Methods.</SubjectCard>
-                    <SubjectCard title="Olympiad Mathematics" unit="EX" link="#0">Triumvirs Academia vows to uphold our prowess in the field of mathematics.</SubjectCard>
                 </div>
             </section>
             <section className="mb-8 py-16" id="science">
@@ -51,9 +48,6 @@ export default function Academia() {
                     <SubjectCard title="VCE Biology" unit="34" link="#0">We are specialists specialising in special students specialising in Specialist Mathematics.</SubjectCard>
                     <SubjectCard title="VCE Chemistry" unit="34" link="#0">We are methodologists methodically crafting methodologies to cover the methods of Mathematical Methods.</SubjectCard>
                     <SubjectCard title="VCE Physics" unit="34" link="#0">Triumvirs Academia vows to uphold our prowess in the field of mathematics.</SubjectCard>
-                    <SubjectCard title="VCE Biology" unit="12" link="#0">We are specialists specialising in special students specialising in Specialist Mathematics.</SubjectCard>
-                    <SubjectCard title="VCE Chemistry" unit="12" link="#0">We are methodologists methodically crafting methodologies to cover the methods of Mathematical Methods.</SubjectCard>
-                    <SubjectCard title="VCE Physics" unit="12" link="#0">Triumvirs Academia vows to uphold our prowess in the field of mathematics.</SubjectCard>
                     <SubjectCard title="Olympiad Biology" unit="EX" link="#0">We are specialists specialising in special students specialising in Specialist Mathematics.</SubjectCard>
                     <SubjectCard title="Olympiad Chemistry" unit="EX" link="#0">We are methodologists methodically crafting methodologies to cover the methods of Mathematical Methods.</SubjectCard>
                 </div>
@@ -71,10 +65,7 @@ export default function Academia() {
                     <SubjectCard title="VCE English" unit="34" link="#0">We are specialists specialising in special students specialising in Specialist Mathematics.</SubjectCard>
                     <SubjectCard title="VCE Economics" unit="34" link="#0">We are methodologists methodically crafting methodologies to cover the methods of Mathematical Methods.</SubjectCard>
                     <SubjectCard title="SAT Preparation" unit="EX" link="#0">Triumvirs Academia vows to uphold our prowess in the field of mathematics.</SubjectCard>
-                    <SubjectCard title="VCE English" unit="12" link="#0">We are specialists specialising in special students specialising in Specialist Mathematics.</SubjectCard>
-                    <SubjectCard title="VCE Economics" unit="12" link="#0">We are methodologists methodically crafting methodologies to cover the methods of Mathematical Methods.</SubjectCard>
                     <SubjectCard title="International Applications" unit="EX" link="#0">Triumvirs Academia vows to uphold our prowess in the field of mathematics.</SubjectCard>
-                    <SubjectCard title="Mindset Preparation" unit="EX" link="#0">Triumvirs Academia vows to uphold our prowess in the field of mathematics.</SubjectCard>
                 </div>
             </section>
         </div>

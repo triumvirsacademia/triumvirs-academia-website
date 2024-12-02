@@ -1,7 +1,7 @@
 import { Client } from '@notionhq/client';
 
-const notion = new Client({ auth: "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" });
-const database_id: string = "14259840e7c18089b3c1d60ca8536f03";
+const notion = new Client({ auth: process.env.NOTION_API_TOKEN });
+const database_id: string = process.env.NOTION_DATABASE_ID || "";
 
 export const addToDatabase = async (first_name: string, last_name: string, email: string, phone_number: string, school: string, year_level: number, subjects: string[]) => {
   try {
