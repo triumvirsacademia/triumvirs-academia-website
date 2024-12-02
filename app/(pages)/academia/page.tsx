@@ -17,7 +17,7 @@ export default function Academia() {
             </div>
             <section>
                 <div className="flex flex-col justify-center items-center">
-                    <p className="text-2xl font-medium tracking-tighter mb-4 w-[60vw] 3xl:w-[72rem]">We offer quite a wide variety of subjects.</p>
+                    <p className="text-2xl font-medium tracking-tighter mb-4 w-[60vw] 3xl:w-[72rem]">We offer a <C>wide</C> variety of subjects, so that you can have the most <C>consistent</C> experience across all your studies.</p>
                 </div>
             </section>
             <section className="mb-8 py-16" id="mathematics">
