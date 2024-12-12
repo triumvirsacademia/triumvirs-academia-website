@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import SubjectList from "./subject-list"
 
 export default function Home() {
@@ -46,14 +47,14 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className="relative">
-                <span className="absolute bottom-24 h-[0.0625rem] bg-black w-[50vw] left-0"></span>
-                <div className="w-screen flex justify-center items-center">
-                    <div className="rounded-[8rem] border border-black h-64 w-96 bg-white z-10 flex justify-center items-center">
-                        <p className="text-9xl font-serif font-bold bg-gradient-to-r from-black via-[#682D6A] via-30% to-[#BD19C2] bg-clip-text text-transparent">$50</p>
-                    </div>
+            <div className='flex justify-center items-center mt-16 mb-16'>
+                <div className='relative w-[30vw] flex justify-start'>
+                    <Link href="/sign-up"><p className="text-9xl font-bold tracking-tighter hover:text-accent flex items-center justify-end">Sign up<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="size-32 pt-2">
+                                    <path fillRule="evenodd" d="M6.22 4.22a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06L8.94 8 6.22 5.28a.75.75 0 0 1 0-1.06Z" clipRule="evenodd" />
+                                </svg></p></Link>
+                    <span className="absolute -left-16 bottom-[18px] h-[0.0625rem] bg-black w-[40rem]"></span>
                 </div>
-                <span className="absolute top-24 h-[0.0625rem] bg-black w-[50vw] right-0"></span>
+                <div className='w-[10vw]'></div>
             </div>
             <SubjectList />
         </>

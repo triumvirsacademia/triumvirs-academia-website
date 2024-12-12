@@ -23,7 +23,7 @@ export default function About() {
             <section className="flex justify-center items-center py-32">
                 <div className="w-96">
                     <div className="rounded-[9rem] border border-black h-72 w-72 bg-white z-10 flex justify-center items-center">
-                        <p className="text-8xl font-serif font-bold bg-gradient-to-r from-black via-[#682D6A] via-30% to-[#BD19C2] bg-clip-text text-transparent">TBC</p>
+                        <p className="text-8xl font-serif font-bold bg-gradient-to-r from-black via-[#682D6A] via-30% to-[#BD19C2] bg-clip-text text-transparent">99.95</p>
                     </div>
                 </div>
                 <div className="relative w-[33rem]">
@@ -34,14 +34,14 @@ export default function About() {
                     <div className="relative">
                         <span className="absolute left-0 bottom-0 h-[26rem] bg-black w-[0.0625rem]"></span>
                         <ul className="pl-8 pt-4 pb-6">
-                            <li className="text-3xl font-medium tracking-tighter">English <span className="font-normal font-serif">TBC</span></li>
-                            <li className="text-3xl font-medium tracking-tighter">Specialist Mathematics <span className="font-normal font-serif">TBC</span></li>
+                            <li className="text-3xl font-medium tracking-tighter">English <span className="font-normal font-serif">46</span></li>
+                            <li className="text-3xl font-medium tracking-tighter">Specialist Mathematics <span className="font-normal font-serif">50</span></li>
                             <li className="text-3xl font-medium tracking-tighter">Mathematical Methods <span className="font-normal font-serif">50 (Premier&apos;s)</span></li>
-                            <li className="text-3xl font-medium tracking-tighter">Biology <span className="font-normal font-serif">TBC</span></li>
-                            <li className="text-3xl font-medium tracking-tighter">Chemistry <span className="font-normal font-serif">TBC</span></li>
-                            <li className="text-3xl font-medium tracking-tighter">Physics <span className="font-normal font-serif">TBC</span></li>
-                            <li className="text-3xl font-medium tracking-tighter">Chinese as a Second Language <span className="font-normal font-serif">29</span></li>
+                            <li className="text-3xl font-medium tracking-tighter">Physics <span className="font-normal font-serif">50</span></li>
                             <li className="text-3xl font-medium tracking-tighter">UMEP Mathematics <span className="font-normal font-serif">5.0</span></li>
+                            <li className="text-3xl font-medium tracking-tighter">Chemistry <span className="font-normal font-serif">50</span></li>
+                            <li className="text-3xl font-medium tracking-tighter">Biology <span className="font-normal font-serif">50</span></li>
+                            <li className="text-3xl font-medium tracking-tighter">Chinese as a Second Language <span className="font-normal font-serif">29</span></li>
                         </ul>
                     </div>
                     <div className="relative">
@@ -57,7 +57,7 @@ export default function About() {
             <section className="flex justify-center items-center py-32">
                 <div className="w-96">
                     <div className="rounded-[9rem] border border-black h-72 w-72 bg-white z-10 flex justify-center items-center">
-                        <p className="text-8xl font-serif font-bold bg-gradient-to-r from-black via-[#682D6A] via-30% to-[#BD19C2] bg-clip-text text-transparent">TBC</p>
+                        <p className="text-8xl font-serif font-bold bg-gradient-to-r from-black via-[#682D6A] via-30% to-[#BD19C2] bg-clip-text text-transparent">99.95</p>
                     </div>
                 </div>
                 <div className="relative w-[33rem]">
@@ -68,13 +68,13 @@ export default function About() {
                     <div className="relative">
                         <span className="absolute left-0 bottom-0 h-96 bg-black w-[0.0625rem]"></span>
                         <ul className="pl-8 pt-4 pb-6">
-                            <li className="text-3xl font-medium tracking-tighter">English Language <span className="font-normal font-serif">TBC</span></li>
-                            <li className="text-3xl font-medium tracking-tighter">Specialist Mathematics <span className="font-normal font-serif">TBC</span></li>
+                            <li className="text-3xl font-medium tracking-tighter">English Language <span className="font-normal font-serif">46</span></li>
+                            <li className="text-3xl font-medium tracking-tighter">Specialist Mathematics <span className="font-normal font-serif">50</span></li>
                             <li className="text-3xl font-medium tracking-tighter">Mathematical Methods <span className="font-normal font-serif">50 (Premier&apos;s)</span></li>
                             <li className="text-3xl font-medium tracking-tighter">Chinese as a Second Language <span className="font-normal font-serif">43</span></li>
-                            <li className="text-3xl font-medium tracking-tighter">Chemistry <span className="font-normal font-serif">TBC</span></li>
-                            <li className="text-3xl font-medium tracking-tighter">Physics <span className="font-normal font-serif">TBC</span></li>
                             <li className="text-3xl font-medium tracking-tighter">UMEP Mathematics <span className="font-normal font-serif">5.0</span></li>
+                            <li className="text-3xl font-medium tracking-tighter">Chemistry <span className="font-normal font-serif">50</span></li>
+                            <li className="text-3xl font-medium tracking-tighter">Physics <span className="font-normal font-serif">46</span></li>
                         </ul>
                     </div>
                     <div className="relative">
@@ -90,7 +90,7 @@ export default function About() {
             <section className="flex justify-center items-center py-32">
                 <div className="w-96">
                     <div className="rounded-[9rem] border border-black h-72 w-72 bg-white z-10 flex justify-center items-center">
-                        <p className="text-8xl font-serif font-bold bg-gradient-to-r from-black via-[#682D6A] via-30% to-[#BD19C2] bg-clip-text text-transparent">TBC</p>
+                        <p className="text-8xl font-serif font-bold bg-gradient-to-r from-black via-[#682D6A] via-30% to-[#BD19C2] bg-clip-text text-transparent">99.95</p>
                     </div>
                 </div>
                 <div className="relative w-[33rem]">
@@ -101,13 +101,13 @@ export default function About() {
                     <div className="relative">
                         <span className="absolute left-0 bottom-0 h-96 bg-black w-[0.0625rem]"></span>
                         <ul className="pl-8 pt-4 pb-6">
-                            <li className="text-3xl font-medium tracking-tighter">English <span className="font-normal font-serif">TBC</span></li>
-                            <li className="text-3xl font-medium tracking-tighter">Specialist Mathematics <span className="font-normal font-serif">TBC</span></li>
-                            <li className="text-3xl font-medium tracking-tighter">Latin <span className="font-normal font-serif">TBC</span></li>
-                            <li className="text-3xl font-medium tracking-tighter">Chinese as a Second Language <span className="font-normal font-serif">40</span></li>
+                            <li className="text-3xl font-medium tracking-tighter">English <span className="font-normal font-serif">50</span></li>
+                            <li className="text-3xl font-medium tracking-tighter">Specialist Mathematics <span className="font-normal font-serif">42</span></li>
                             <li className="text-3xl font-medium tracking-tighter">Mathematical Methods <span className="font-normal font-serif">49</span></li>
-                            <li className="text-3xl font-medium tracking-tighter">Economics <span className="font-normal font-serif">TBC</span></li>
+                            <li className="text-3xl font-medium tracking-tighter">Chinese as a Second Language <span className="font-normal font-serif">40</span></li>
+                            <li className="text-3xl font-medium tracking-tighter">Latin <span className="font-normal font-serif">33</span></li>
                             <li className="text-3xl font-medium tracking-tighter">UMEP Mathematics <span className="font-normal font-serif">4.5</span></li>
+                            <li className="text-3xl font-medium tracking-tighter">Economics <span className="font-normal font-serif">39</span></li>
                         </ul>
                     </div>
                     <div className="relative">
