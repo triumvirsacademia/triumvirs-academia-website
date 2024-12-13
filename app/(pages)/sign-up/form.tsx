@@ -14,11 +14,14 @@ const SignUpForm = () => {
 
   const options = [
     "Specialist Mathematics 34",
-    "Mathematical Methods 34",
     "Biology 34",
+    "Mathematical Methods 34",
     "Chemistry 34",
+    "English 34",
     "Physics 34",
-    "Economics 34",
+    "Biology Olympiad",
+    "Chemistry Olympiad",
+    "SAT Preparation",
   ]
 
   const handleSubmit = async (e: { preventDefault: () => void; }) => {
