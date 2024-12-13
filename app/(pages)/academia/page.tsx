@@ -30,8 +30,8 @@ export default function Academia() {
                     <div className="w-[40vw]"></div>
                 </div>
                 <div className="max-w-xs mx-auto grid gap-6 lg:grid-cols-3 items-start lg:max-w-7xl">
-                    <SubjectCard title="Specialist Mathematics" unit="34" link="#0">We are specialists specialising in special students specialising in Specialist Mathematics.</SubjectCard>
-                    <SubjectCard title="Mathematical Methods" unit="34" link="#0">We are methodologists methodically crafting methodologies to cover the methods of Mathematical Methods.</SubjectCard>
+                    <SubjectCard title="Specialist Mathematics" unit="34" link="#0">Mainly taught by Joel Cheok and Jerry Jin. Also suitable for advanced Unit 1/2 students.</SubjectCard>
+                    <SubjectCard title="Mathematical Methods" unit="34" link="#0">Taught by Joel Cheok, Jerry Jin and Chris Lu. Also suitable for advanced Unit 1/2 students.</SubjectCard>
                 </div>
             </section>
             <section className="mb-8 py-16" id="science">
@@ -44,11 +44,11 @@ export default function Academia() {
                     <div className="w-[40vw]"></div>
                 </div>
                 <div className="max-w-xs mx-auto grid gap-6 lg:grid-cols-3 items-start lg:max-w-7xl">
-                    <SubjectCard title="VCE Biology" unit="34" link="#0">We are specialists specialising in special students specialising in Specialist Mathematics.</SubjectCard>
-                    <SubjectCard title="VCE Chemistry" unit="34" link="#0">We are methodologists methodically crafting methodologies to cover the methods of Mathematical Methods.</SubjectCard>
-                    <SubjectCard title="VCE Physics" unit="34" link="#0">Triumvirs Academia vows to uphold our prowess in the field of mathematics.</SubjectCard>
-                    <SubjectCard title="Olympiad Biology" unit="EX" link="#0">We are specialists specialising in special students specialising in Specialist Mathematics.</SubjectCard>
-                    <SubjectCard title="Olympiad Chemistry" unit="EX" link="#0">We are methodologists methodically crafting methodologies to cover the methods of Mathematical Methods.</SubjectCard>
+                    <SubjectCard title="VCE Biology" unit="34" link="#0">Taught by Joel Cheok (International Biology Olympiad Silver Medallist, RAW 50).</SubjectCard>
+                    <SubjectCard title="VCE Chemistry" unit="34" link="#0">Taught by Jerry Jin and Joel Cheok. Also suitable for advanced Unit 1/2 students.</SubjectCard>
+                    <SubjectCard title="VCE Physics" unit="34" link="#0">Taught by Joel Cheok and Jerry Jin. Also suitable for advanced Unit 1/2 students.</SubjectCard>
+                    <SubjectCard title="Olympiad Biology" unit="EX" link="#0">Taught by Joel Cheok for Year 11s and below. Also suitable for non-VCE students.</SubjectCard>
+                    <SubjectCard title="Olympiad Chemistry" unit="EX" link="#0">Taught by Jerry Jin for Year 11s and below. Also suitable for non-VCE students.</SubjectCard>
                 </div>
             </section>
             <section className="mb-8 py-16" id="other">
@@ -61,8 +61,8 @@ export default function Academia() {
                     <div className="w-[40vw]"></div>
                 </div>
                 <div className="max-w-xs mx-auto grid gap-6 lg:grid-cols-3 items-start lg:max-w-7xl">
-                    <SubjectCard title="VCE English" unit="34" link="#0">We are specialists specialising in special students specialising in Specialist Mathematics.</SubjectCard>
-                    <SubjectCard title="SAT Preparation" unit="EX" link="#0">Triumvirs Academia vows to uphold our prowess in the field of mathematics.</SubjectCard>
+                    <SubjectCard title="VCE English" unit="34" link="#0">Taught by Chris Lu (only Section B and C). Also suitable for all Unit 1/2 students.</SubjectCard>
+                    <SubjectCard title="SAT Preparation" unit="EX" link="#0">Taught by Chris Lu (1570) and Jerry Jin (1590). Complimentary advice with other subjects.</SubjectCard>
                 </div>
             </section>
         </div>
