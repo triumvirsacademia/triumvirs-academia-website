@@ -176,13 +176,13 @@ const SignUpForm = () => {
   </div>
     <div className='flex justify-center py-16'>
         <div className='w-[10vw]'></div>
-        <div className='w-[50vw]'>
+        <div className='w-[50vw] 2xl:w-[768px]'>
             <div className='relative mb-8'>
                 <h1 className='text-5xl font-semibold tracking-tighter'>Subjects</h1>
                 <span className="absolute -left-8 bottom-[0.375rem] h-[0.0625rem] bg-black w-64"></span>
                 <span className="absolute left-[0.0625rem] -bottom-2 h-16 bg-black w-[0.0625rem]"></span>
             </div>
-            <div className="grid grid-cols-2">
+            <div className="grid grid-cols-1 xl:grid-cols-2">
                 {options.map((option) => (
                     <div key={option}>
                     <button
