@@ -60,7 +60,7 @@ export default function Academia() {
                     </div>
                     <div className="w-[40vw]"></div>
                 </div>
-                <div className="max-w-xs mx-auto grid gap-6 lg:grid-cols-3 items-start lg:max-w-7xl">
+                <div className="max-w-xs mx-auto grid gap-6 grid-cols-1 md:grid-cols-2 md:max-w-xl lg:grid-cols-3 items-start lg:max-w-7xl">
                     <SubjectCard title="VCE English" unit="34">Taught by Chris Lu (only Section B and C). Also suitable for all Unit 1/2 students.</SubjectCard>
                     <SubjectCard title="SAT Preparation" unit="EX">Taught by Chris Lu (1570) and Jerry Jin (1590). Complimentary advice with other subjects.</SubjectCard>
                 </div>
