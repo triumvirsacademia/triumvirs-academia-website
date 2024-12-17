@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function TermsOfSerivce() {
     return (
         <div>
@@ -111,7 +113,7 @@ You can review the most current version of the Terms of Service at any time at t
 We reserve the right, at our sole discretion, to update, change or replace any part of these Terms of Service by posting updates and changes to our website. It is your responsibility to check our website periodically for changes. Your continued use of or access to our website or the Service following the posting of any changes to these Terms of Service constitutes acceptance of those changes. 
 
 SECTION 20 - CONTACT INFORMATION
-Questions about the Terms of Service should be sent to us at triumvirsacademia@gmail.com.
+Questions about the Terms of Service should be sent to us at <Link href='mailto:jerry@triumvirsacademia.com' className="text-accent">jerry@triumvirsacademia.com</Link>.
   
         </div>
     )

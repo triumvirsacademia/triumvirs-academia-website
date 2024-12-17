@@ -175,8 +175,8 @@ const SignUpForm = () => {
           />
         </div>
     <div className='flex justify-center py-16'>
-        <div className='hidden 2xl:block w-[10vw]'></div>
-        <div className='w-60 sm:w-[50vw] 2xl:w-[768px]'>
+        <div className='hidden xl:block w-[8vw]'></div>
+        <div className='w-72 sm:w-[60vw] 2xl:w-[calc(1536*0.6px)]'>
             <div className='relative mb-8'>
                 <h1 className='text-5xl font-semibold tracking-tighter'>Subjects</h1>
                 <span className="absolute -left-8 bottom-[0.375rem] h-[0.0625rem] bg-black w-64"></span>
@@ -185,23 +185,13 @@ const SignUpForm = () => {
             <div className="grid grid-cols-1 xl:grid-cols-2">
                 {options.map((option) => (
                     <div key={option}>
-                    <button
-                    type="button"
-                    className={`font-serif tracking-tighter ${
-                        selectedOptions.includes(option)
-                        ? "text-accent"
-                        : "line-through"
-                    }`}
-                    onClick={() =>
+                      <input id={option} type="checkbox" value="" onClick={() =>
                         setSelectedOptions((prev) =>
                         prev.includes(option)
                             ? prev.filter((o) => o !== option)
                             : [...prev, option]
-                        )
-                    }
-                    >
-                    {option}
-                    </button>
+                        )} className="w-8 h-6 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"></input>
+                      <label htmlFor={option} className="font-serif tracking-tighter">{option}</label>
                     </div>
                 ))}
             </div>
