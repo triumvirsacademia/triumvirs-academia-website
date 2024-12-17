@@ -13,12 +13,12 @@ const SignUpForm = () => {
   const [selectedOptions, setSelectedOptions] = useState<string[]>([]);
 
   const options = [
-    "Specialist Mathematics 34",
-    "Mathematical Methods 34",
-    "English 34",
-    "Biology 34",
-    "Chemistry 34",
-    "Physics 34",
+    "Specialist Mathematics 3/4",
+    "Mathematical Methods 3/4",
+    "English 3/4",
+    "Biology 3/4",
+    "Chemistry 3/4",
+    "Physics 3/4",
     "Biology Olympiad",
     "Chemistry Olympiad",
     "SAT Preparation",
@@ -190,7 +190,7 @@ const SignUpForm = () => {
                         prev.includes(option)
                             ? prev.filter((o) => o !== option)
                             : [...prev, option]
-                        )} className="w-8 h-6 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"></input>
+                        )} className="w-6 md:w-8 h-4 md:h-6 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"></input>
                       <label htmlFor={option} className="font-serif tracking-tighter">{option}</label>
                     </div>
                 ))}
