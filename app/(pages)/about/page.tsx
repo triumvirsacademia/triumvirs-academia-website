@@ -99,15 +99,15 @@ export default function About() {
                         <span className="absolute left-0 bottom-[13px] h-[0.0625rem] bg-black w-[36rem]"></span>
                     </div>
                     <div className="relative">
-                        <span className="absolute left-0 bottom-0 h-96 bg-black w-[0.0625rem]"></span>
+                        <span className="absolute left-0 bottom-0 h-[20rem] bg-black w-[0.0625rem]"></span>
                         <ul className="pl-8 pt-4 pb-6">
                             <li className="text-3xl font-medium tracking-tighter">English <span className="font-normal font-serif">50</span></li>
                             <li className="text-3xl font-medium tracking-tighter">Specialist Mathematics <span className="font-normal font-serif">42</span></li>
                             <li className="text-3xl font-medium tracking-tighter">Mathematical Methods <span className="font-normal font-serif">49</span></li>
                             <li className="text-3xl font-medium tracking-tighter">Chinese as a Second Language <span className="font-normal font-serif">40</span></li>
-                            <li className="text-3xl font-medium tracking-tighter">Latin <span className="font-normal font-serif">33</span></li>
+                            {/* <li className="text-3xl font-medium tracking-tighter">Latin <span className="font-normal font-serif">33</span></li> */}
                             <li className="text-3xl font-medium tracking-tighter">UMEP Mathematics <span className="font-normal font-serif">4.5</span></li>
-                            <li className="text-3xl font-medium tracking-tighter">Economics <span className="font-normal font-serif">39</span></li>
+                            {/* <li className="text-3xl font-medium tracking-tighter">Economics <span className="font-normal font-serif">39</span></li> */}
                         </ul>
                     </div>
                     <div className="relative">
