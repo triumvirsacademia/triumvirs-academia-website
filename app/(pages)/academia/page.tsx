@@ -3,16 +3,23 @@ import SubjectCard from "./subject-card"
 export default function Academia() {
     return (
         <div>
-            <div className="mb-16">
-                <div className="flex justify-center items-center h-64 py-48 bg-white">
-                    <div className="relative">
+            <div className="mb-8 md:mb-16">
+                <div className="flex justify-center items-center h-32 md:h-64 py-24 md:py-48 bg-white">
+                    <div className="hidden md:block relative">
                         <h1 className="text-[9rem] font-bold tracking-tighter">Academia</h1>
                         <span className="absolute -right-20 bottom-[3.5rem] h-[0.0625rem] bg-black w-[50rem]"></span>
                         <span className="absolute right-0 bottom-[1rem] h-[10.5rem] bg-black w-[0.0625rem]"></span>
                         <div className="absolute -left-8 -top-5 h-64 w-64 rounded-full bg-gradient-to-r from-[#737373] to-[#D9D9D9] mix-blend-difference"></div>
                         <span className="absolute -top-[5.25rem] left-24 h-16 bg-black w-[0.0625rem]"></span>
                     </div>
-                    <div className="w-[10vw]"></div>
+                    <div className="md:hidden block relative">
+                        <h1 className="text-7xl font-bold tracking-tighter">Academia</h1>
+                        <span className="absolute -right-10 bottom-[9px] h-[1px] bg-black w-96"></span>
+                        <span className="absolute right-0 -bottom-3 h-24 bg-black w-[0.0625rem]"></span>
+                        <div className="absolute -left-8 -top-5 h-32 w-32 md:h-64 md:w-64 rounded-full bg-gradient-to-r from-[#737373] to-[#D9D9D9] mix-blend-difference"></div>
+                        <span className="absolute -top-[60px] left-8 h-10 bg-black w-[1px]"></span>
+                    </div>
+                    <div className="w-[5vw]"></div>
                 </div>
             </div>
             <section>
