@@ -18,7 +18,7 @@ export default function SubjectCard({title, unit, points, children}: {title: str
 	 	"Access to assessment tasks and targeted guidance on which ones to complete",
 	 	"Access to notes from a range of sources",
         (<span key={6}>Enquire for more at <Link href='mailto:jerry@triumvirsacademia.com' className="text-accent">jerry@triumvirsacademia.com</Link></span>),
-        "Offered as complementary help to anyone undertaking a class at Triumvirs Academia",
+        "Offered as complemintary help to anyone undertaking a class at Triumvirs Academia (not sold separately)",
     ]
 
     return (
