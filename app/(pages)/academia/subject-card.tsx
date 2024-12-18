@@ -1,13 +1,25 @@
 'use client'
 
 import { useState } from "react"
+import Link from "next/link"
 
-export default function SubjectCard({title, unit, children}: {title: string, unit: string, children: React.ReactNode}) {
+export default function SubjectCard({title, unit, points, children}: {title: string, unit: string, points: number[], children: React.ReactNode}) {
     const [active, setActive] = useState(false)
 
     const togglePopup = () => {
         setActive(!active);
     }
+
+    const allPoints = [
+        "Weekly 2 hour lessons which are recorded",
+	 	"Weekly exam-style homework sheets to reinforce knowledge",
+	 	"Complimentary CAS class teaching useful obscure commands",
+	 	"Personalised feedback available out of class",
+	 	"Access to assessment tasks and targeted guidance on which ones to complete",
+	 	"Access to notes from a range of sources",
+        (<span>Enquire for more at <Link href='mailto:jerry@triumvirsacademia.com' className="text-accent">jerry@triumvirsacademia.com</Link></span>),
+        "Offered as complementary help to anyone undertaking a class at Triumvirs Academia",
+    ]
 
     return (
         <div>
@@ -62,7 +74,7 @@ export default function SubjectCard({title, unit, children}: {title: string, uni
 
                         {/* Modal Content */}
                         <div className="fixed inset-0 z-50 flex items-center justify-center">
-                            <div className="bg-white rounded-lg p-12 shadow-xl max-w-2xl mx-auto">
+                            <div className="bg-white rounded-lg pt-12 px-12 pb-10 shadow-xl max-w-2xl mx-auto">
                                 <div className="relative w-fit">
 
                                     <h2 className="text-5xl tracking-tighter font-bold mb-4">{title + " " + unit}</h2>
@@ -70,19 +82,21 @@ export default function SubjectCard({title, unit, children}: {title: string, uni
                                     <span className="absolute -right-8 bottom-[6px] h-[0.0625rem] bg-black w-[16rem]"></span>
                                 </div>
                                 
-                                <p className="mb-4 font-serif tracking-tighter">
-                                This is a popup where you can add additional information. You can style it further based on your needs.
-                                </p>
-                                <button
-                                    onClick={togglePopup}
-                                    className="rounded-lg hover:text-accent focus:outline-none focus:ring-2 focus:ring-accent"
-                                    >
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="size-6">
-  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
-</svg>
-
-
-                                </button>
+                                <ul className="mb-4 font-serif text-xl tracking-tighter list-disc pl-4">
+                                {points.map((x, index) => (
+                                    <li key={index}>{allPoints[x]}</li>
+                                ))}
+                                </ul>
+                                <div className="flex justify-end">
+                                    <button
+                                        onClick={togglePopup}
+                                        className="rounded-lg hover:text-accent focus:outline-none focus:ring-2 focus:ring-accent"
+                                        >
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="size-6">
+                                            <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
+                                        </svg>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -37,8 +37,8 @@ export default function Academia() {
                     <div className="w-[40vw]"></div>
                 </div>
                 <div className="max-w-xs mx-auto grid gap-6 lg:grid-cols-3 items-start lg:max-w-7xl">
-                    <SubjectCard title="Specialist Mathematics" unit="3/4">Mainly taught by Joel Cheok and Jerry Jin. Also suitable for advanced Unit 1/2 students.</SubjectCard>
-                    <SubjectCard title="Mathematical Methods" unit="3/4">Taught by Joel Cheok, Jerry Jin and Chris Lu. Also suitable for advanced Unit 1/2 students.</SubjectCard>
+                    <SubjectCard title="Specialist Mathematics" unit="3/4" points={[0,1,2,3,4,5]}>Mainly taught by Joel Cheok and Jerry Jin. Also suitable for advanced Unit 1/2 students.</SubjectCard>
+                    <SubjectCard title="Mathematical Methods" unit="3/4" points={[0,1,2,3,4,5]}>Taught by Joel Cheok, Jerry Jin and Chris Lu. Also suitable for advanced Unit 1/2 students.</SubjectCard>
                 </div>
             </section>
             <section className="mb-8 py-16" id="science">
@@ -51,11 +51,11 @@ export default function Academia() {
                     <div className="w-[40vw]"></div>
                 </div>
                 <div className="max-w-xs mx-auto grid gap-6 lg:grid-cols-3 items-start lg:max-w-7xl">
-                    <SubjectCard title="VCE Biology" unit="3/4">Taught by Joel Cheok (International Biology Olympiad Silver Medallist, RAW 50).</SubjectCard>
-                    <SubjectCard title="VCE Chemistry" unit="3/4">Taught by Jerry Jin and Joel Cheok. Also suitable for advanced Unit 1/2 students.</SubjectCard>
-                    <SubjectCard title="VCE Physics" unit="3/4">Taught by Joel Cheok and Jerry Jin. Also suitable for advanced Unit 1/2 students.</SubjectCard>
-                    <SubjectCard title="Olympiad Biology" unit="EX">Taught by Joel Cheok for Year 11s and below. Also suitable for non-VCE students.</SubjectCard>
-                    <SubjectCard title="Olympiad Chemistry" unit="EX">Taught by Jerry Jin for Year 11s and below. Also suitable for non-VCE students.</SubjectCard>
+                    <SubjectCard title="VCE Biology" unit="3/4" points={[0,1,3,4,5]}>Taught by Joel Cheok (International Biology Olympiad Silver Medallist, RAW 50).</SubjectCard>
+                    <SubjectCard title="VCE Chemistry" unit="3/4" points={[0,1,3,4,5]}>Taught by Jerry Jin and Joel Cheok. Also suitable for advanced Unit 1/2 students.</SubjectCard>
+                    <SubjectCard title="VCE Physics" unit="3/4" points={[0,1,3,4,5]}>Taught by Joel Cheok and Jerry Jin. Also suitable for advanced Unit 1/2 students.</SubjectCard>
+                    <SubjectCard title="Olympiad Biology" unit="EX" points={[6]}>Taught by Joel Cheok for Year 11s and below. Also suitable for non-VCE students.</SubjectCard>
+                    <SubjectCard title="Olympiad Chemistry" unit="EX" points={[6]}>Taught by Jerry Jin for Year 11s and below. Also suitable for non-VCE students.</SubjectCard>
                 </div>
             </section>
             <section className="mb-8 py-16" id="other">
@@ -68,8 +68,8 @@ export default function Academia() {
                     <div className="w-[40vw]"></div>
                 </div>
                 <div className="max-w-xs mx-auto grid gap-6 grid-cols-1 md:grid-cols-2 md:max-w-xl lg:grid-cols-3 items-start lg:max-w-7xl">
-                    <SubjectCard title="VCE English" unit="3/4">Taught by Chris Lu (only Section B and C). Also suitable for all Unit 1/2 students.</SubjectCard>
-                    <SubjectCard title="SAT Preparation" unit="EX">Taught by Chris Lu (1570) and Jerry Jin (1590). Complimentary advice with other subjects.</SubjectCard>
+                    <SubjectCard title="VCE English" unit="3/4" points={[0,1,3,4,5]}>Taught by Chris Lu (only Section B and C). Also suitable for all Unit 1/2 students.</SubjectCard>
+                    <SubjectCard title="SAT Preparation" unit="EX" points={[7]}>Taught by Chris Lu (1570) and Jerry Jin (1590). Complimentary advice with other subjects.</SubjectCard>
                 </div>
             </section>
         </div>
