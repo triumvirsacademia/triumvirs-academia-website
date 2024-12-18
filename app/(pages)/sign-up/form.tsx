@@ -185,7 +185,7 @@ const SignUpForm = () => {
             <div className="grid grid-cols-1 xl:grid-cols-2">
                 {options.map((option) => (
                     <div key={option}>
-                      <input id={option} type="checkbox" value="" onClick={() =>
+                      <input id={option} type="checkbox" checked={selectedOptions.includes(option)} onChange={() =>
                         setSelectedOptions((prev) =>
                         prev.includes(option)
                             ? prev.filter((o) => o !== option)
