@@ -14,7 +14,7 @@ export default function Academia() {
                     </div>
                     <div className="md:hidden block relative">
                         <h1 className="text-7xl font-bold tracking-tighter">Academia</h1>
-                        <span className="absolute -right-10 bottom-[9px] h-[1px] bg-black w-96"></span>
+                        <span className="absolute -right-10 bottom-[10px] h-[1px] bg-black w-96"></span>
                         <span className="absolute right-0 -bottom-3 h-24 bg-black w-[0.0625rem]"></span>
                         <div className="absolute -left-8 -top-5 h-32 w-32 md:h-64 md:w-64 rounded-full bg-gradient-to-r from-[#737373] to-[#D9D9D9] mix-blend-difference"></div>
                         <span className="absolute -top-[60px] left-8 h-10 bg-black w-[1px]"></span>
