@@ -3,7 +3,7 @@
 import { useState } from "react"
 import Link from "next/link"
 
-export default function SubjectCard({title, unit, points, children}: {title: string, unit: string, points: number[], children: React.ReactNode}) {
+export default function SubjectCard({title, unit, time, points, children}: {title: string, unit: string, time: string, points: number[], children: React.ReactNode}) {
     const [active, setActive] = useState(false)
 
     const togglePopup = () => {
@@ -81,12 +81,15 @@ export default function SubjectCard({title, unit, points, children}: {title: str
                                     <span className="absolute -left-4 bottom-[6px] h-[0.0625rem] bg-black w-[24rem]"></span>
                                     <span className="absolute -right-8 bottom-[6px] h-[0.0625rem] bg-black w-[16rem]"></span>
                                 </div>
+
+                                <h3 className="font-semibold text-2xl tracking-tighter mb-2">{time}*</h3>
                                 
-                                <ul className="mb-4 font-serif text-xl tracking-tighter list-disc pl-4">
+                                <ul className="mb-2 font-serif text-xl tracking-tighter list-disc pl-4">
                                 {points.map((x, index) => (
                                     <li key={index}>{allPoints[x]}</li>
                                 ))}
                                 </ul>
+                                <p className="mb-2 font-serif tracking-tighter">*We are very flexible and open to suggestions for different times, or even new classes.</p>
                                 <div className="flex justify-end">
                                     <button
                                         onClick={togglePopup}

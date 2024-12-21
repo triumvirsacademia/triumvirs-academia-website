@@ -26,7 +26,7 @@ import Link from "next/link"
       },
       {
         title: "How much are the classes?",
-        text: "$40 an hour for Unit 3&4 VCE classes. Enquire for Olympiad mentoring pricing.",
+        text: "$40 an hour for Unit 3/4 VCE classes. Enquire for Olympiad mentoring pricing.",
         active: false,
       },
       {

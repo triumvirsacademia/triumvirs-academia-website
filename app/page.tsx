@@ -72,6 +72,9 @@ export default function Home() {
                     <span className="absolute -left-4 md:-left-16 bottom-[18px] h-[1px] bg-black w-80 md:w-[40rem]"></span>
                 </div>
             </div>
+            <div className="flex justify-center items-center py-16">
+                <iframe className="w-[64vw] h-[36vw]" src="https://www.youtube.com/embed/pf8DL67PGK4?si=SgcNgYk6rJDDxCDf" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+            </div>
             <SubjectList />
         </>
     )

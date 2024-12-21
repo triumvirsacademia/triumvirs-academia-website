@@ -16,7 +16,7 @@ const tabs = [
   {
     title: 'Other',
     tag: 'VCE & Tests',
-    excerpt: "The place for those who are lost (everyone). Guiding English to Economics and miscellaneous decisions for the future, you will finally be able to fully understand yourself.",
+    excerpt: "The place for those who are lost (everyone). Guiding from English to additional SAT preparation, it is time you go unlock your full potential.",
     link: '/academia#other'
   },
 ]

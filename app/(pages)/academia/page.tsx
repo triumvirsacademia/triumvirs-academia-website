@@ -25,6 +25,7 @@ export default function Academia() {
             <section>
                 <div className="flex flex-col justify-center items-center">
                     <p className="text-2xl font-medium tracking-tighter mb-4 w-[60vw] 3xl:w-[72rem]">We offer a <C>wide</C> variety of subjects, so that you can have the most <C>consistent</C> experience across all your studies.</p>
+                    <p className="text-2xl font-medium tracking-tighter mb-4 w-[60vw] 3xl:w-[72rem]">We are starting the week <C>beginning</C> the 13th of January, and hope to wrap up content around the winter holidays, so you can <C>efficiently</C> learn all the content whilst saving time to <C>savour</C> all the fun Year 12 has to bring.</p>
                 </div>
             </section>
             <section className="mb-8 py-16" id="mathematics">
@@ -37,8 +38,8 @@ export default function Academia() {
                     <div className="w-[40vw]"></div>
                 </div>
                 <div className="max-w-xs mx-auto grid gap-6 lg:grid-cols-3 items-start lg:max-w-7xl">
-                    <SubjectCard title="Specialist Mathematics" unit="3/4" points={[0,1,2,3,4,5]}>Mainly taught by Joel Cheok and Jerry Jin. Also suitable for advanced Unit 1/2 students.</SubjectCard>
-                    <SubjectCard title="Mathematical Methods" unit="3/4" points={[0,1,2,3,4,5]}>Taught by Joel Cheok, Jerry Jin and Chris Lu. Also suitable for advanced Unit 1/2 students.</SubjectCard>
+                    <SubjectCard title="Specialist Mathematics" unit="3/4" time="Sunday 1:30pm-3:30pm" points={[0,1,2,3,4,5]}>Mainly taught by Joel Cheok and Jerry Jin. Also suitable for advanced Unit 1/2 students.</SubjectCard>
+                    <SubjectCard title="Mathematical Methods" unit="3/4" time="Saturday 1:30pm-3:30pm" points={[0,1,2,3,4,5]}>Taught by Joel Cheok, Jerry Jin and Chris Lu. Also suitable for advanced Unit 1/2 students.</SubjectCard>
                 </div>
             </section>
             <section className="mb-8 py-16" id="science">
@@ -51,11 +52,11 @@ export default function Academia() {
                     <div className="w-[40vw]"></div>
                 </div>
                 <div className="max-w-xs mx-auto grid gap-6 lg:grid-cols-3 items-start lg:max-w-7xl">
-                    <SubjectCard title="VCE Biology" unit="3/4" points={[0,1,3,4,5]}>Taught by Joel Cheok (International Biology Olympiad Silver Medallist, RAW 50).</SubjectCard>
-                    <SubjectCard title="VCE Chemistry" unit="3/4" points={[0,1,3,4,5]}>Taught by Jerry Jin and Joel Cheok. Also suitable for advanced Unit 1/2 students.</SubjectCard>
-                    <SubjectCard title="VCE Physics" unit="3/4" points={[0,1,3,4,5]}>Taught by Joel Cheok and Jerry Jin. Also suitable for advanced Unit 1/2 students.</SubjectCard>
-                    <SubjectCard title="Olympiad Biology" unit="EX" points={[6]}>Taught by Joel Cheok for Year 11s and below. Also suitable for non-VCE students.</SubjectCard>
-                    <SubjectCard title="Olympiad Chemistry" unit="EX" points={[6]}>Taught by Jerry Jin for Year 11s and below. Also suitable for non-VCE students.</SubjectCard>
+                    <SubjectCard title="VCE Biology" unit="3/4" time="Monday 6:30pm-8:30pm" points={[0,1,3,4,5]}>Taught by Joel Cheok (International Biology Olympiad Silver Medallist, RAW 50).</SubjectCard>
+                    <SubjectCard title="VCE Chemistry" unit="3/4" time="Tuesday 6:30pm-8:30pm" points={[0,1,3,4,5]}>Taught by Jerry Jin and Joel Cheok. Also suitable for advanced Unit 1/2 students.</SubjectCard>
+                    <SubjectCard title="VCE Physics" unit="3/4" time="Wednesday 6:30pm-8:30pm" points={[0,1,3,4,5]}>Taught by Joel Cheok and Jerry Jin. Also suitable for advanced Unit 1/2 students.</SubjectCard>
+                    <SubjectCard title="Olympiad Biology" unit="EX" time="Enquire for more" points={[6]}>Taught by Joel Cheok for Year 11s and below. Also suitable for non-VCE students.</SubjectCard>
+                    <SubjectCard title="Olympiad Chemistry" unit="EX" time="Enquire for more" points={[6]}>Taught by Jerry Jin for Year 11s and below. Also suitable for non-VCE students.</SubjectCard>
                 </div>
             </section>
             <section className="mb-8 py-16" id="other">
@@ -68,8 +69,8 @@ export default function Academia() {
                     <div className="w-[40vw]"></div>
                 </div>
                 <div className="max-w-xs mx-auto grid gap-6 grid-cols-1 md:grid-cols-2 md:max-w-xl lg:grid-cols-3 items-start lg:max-w-7xl">
-                    <SubjectCard title="VCE English" unit="3/4" points={[0,1,3,4,5]}>Taught by Chris Lu (only Section B and C). Also suitable for all Unit 1/2 students.</SubjectCard>
-                    <SubjectCard title="SAT Preparation" unit="EX" points={[7]}>Taught by Chris Lu (1570) and Jerry Jin (1590). Complimentary advice with other subjects.</SubjectCard>
+                    <SubjectCard title="VCE English" unit="3/4" time="Thursday 6:30pm-8:30pm" points={[0,1,3,4,5]}>Taught by Chris Lu (only Section B and C). Also suitable for all Unit 1/2 students.</SubjectCard>
+                    <SubjectCard title="SAT Preparation" unit="EX" time="Complimentary" points={[7]}>Taught by Chris Lu (1570) and Jerry Jin (1590). Complimentary advice with other subjects.</SubjectCard>
                 </div>
             </section>
         </div>
