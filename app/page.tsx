@@ -28,16 +28,16 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="block md:hidden">
-                        <div className="flex w-[24rem] justify-between">
+                        <div className="flex w-[22rem] justify-between">
                             <div className="relative text-7xl font-bold tracking-tighter">Triumvirs
-                                <span className="absolute -left-8 bottom-[9px] h-[0.0625rem] bg-black w-96"></span>
+                                <span className="absolute -left-8 bottom-[10px] h-[0.0625rem] bg-black w-[22rem]"></span>
                             </div>
                         </div>
-                        <div className="relative flex w-[24rem] justify-between items-end h-16">
+                        <div className="relative flex w-[22rem] justify-between items-end h-16">
                             <div></div>
                             <div className="relative">
                                 <div className="text-7xl font-bold tracking-tighter">Academia</div>
-                                <span className="absolute -left-8 bottom-[9px] h-[0.0625rem] bg-black w-96"></span>
+                                <span className="absolute -left-8 bottom-[10px] h-[0.0625rem] bg-black w-[22rem]"></span>
                                 <span className="absolute left-0 -top-[1px] h-24 bg-black w-[0.0625rem]"></span>
                                 <div className="absolute right-0 bottom-8 h-32 w-32 md:h-64 md:w-64 rounded-full bg-gradient-to-r from-[#737373] to-[#D9D9D9] mix-blend-difference"></div>
                                 <span className="absolute bottom-40 right-16 h-[50vh] bg-black w-[0.0625rem]"></span>
@@ -48,7 +48,7 @@ export default function Home() {
                 <div className="absolute h-fit bottom-[10vh] w-screen flex justify-center">
                     <div className="w-full max-w-6xl mx-auto px-4 md:px-6">
                         <div className="text-center">                            
-                            <div className="pl-[4vw] font-serif tracking-tighter text-3xl md:text-4xl">A reinvention of 
+                            <div className="font-serif tracking-tighter text-3xl md:text-4xl">A reinvention of 
                                 <span className="inline-flex flex-col h-[calc(theme(fontSize.3xl)*theme(lineHeight.tight))] md:h-[calc(theme(fontSize.4xl)*theme(lineHeight.tight))] overflow-hidden">
                                     <ul className="pl-2 block animate-text-slide text-left leading-tight [&_li]:block">
                                         <li>education</li>
@@ -69,11 +69,11 @@ export default function Home() {
                     <Link href="/sign-up"><p className="text-7xl md:text-9xl font-bold tracking-tighter hover:text-accent flex items-center justify-end">Sign up<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="size-[90px] md:size-32 pt-2">
                                     <path fillRule="evenodd" d="M6.22 4.22a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06L8.94 8 6.22 5.28a.75.75 0 0 1 0-1.06Z" clipRule="evenodd" />
                                 </svg></p></Link>
-                    <span className="absolute -left-4 md:-left-16 bottom-[18px] h-[1px] bg-black w-80 md:w-[40rem]"></span>
+                    <span className="absolute -left-4 md:-left-16 bottom-[19px] h-[1px] bg-black w-80 md:w-[40rem]"></span>
                 </div>
             </div>
             <div className="flex justify-center items-center py-16">
-                <iframe className="w-[64vw] h-[36vw]" src="https://www.youtube.com/embed/pf8DL67PGK4?si=SgcNgYk6rJDDxCDf" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                <iframe className="w-[calc(100vw-2rem)] aspect-video md:w-[64vw]" src="https://www.youtube.com/embed/pf8DL67PGK4?si=SgcNgYk6rJDDxCDf" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
             </div>
             <SubjectList />
         </>

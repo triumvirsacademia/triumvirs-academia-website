@@ -28,7 +28,7 @@ export default function SubjectList() {
           <div className='w-0 md:w-[5vw] lg:w-[10vw] xl:w-[20vw]'></div>
           <div className="relative text-7xl md:text-[9rem] font-bold tracking-tighter">
               Academia
-              <span className="absolute -right-10 md:-right-16 bottom-[9px] md:bottom-5 h-[1px] bg-black w-96 md:w-[48rem]"></span>
+              <span className="absolute -right-10 md:-right-16 bottom-[10px] md:bottom-5 h-[1px] bg-black w-96 md:w-[48rem]"></span>
               <span className="absolute right-0 -bottom-3 md:-bottom-5 h-24 md:h-[10.5rem] bg-black w-[0.0625rem]"></span>
           </div>
       </div>
