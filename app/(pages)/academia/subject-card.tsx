@@ -22,26 +22,26 @@ export default function SubjectCard({title, unit, time, points, children}: {titl
     ]
 
     return (
-        <div>
-            <div className="[background:linear-gradient(45deg,#FFFFFF,theme(colors.white)_50%,#FFFFFF)_padding-box,conic-gradient(from_var(--border-angle),theme(colors.white)_80%,_theme(colors.accent)_86%,_theme(colors.accent)_90%,_theme(colors.accent)_94%,_theme(colors.white))_border-box] border border-transparent animate-border w-96 items-stretch rounded-2xl bg-white shadow-xl focus-visible:outline-none focus-visible:ring focus-visible:ring-accent min-[480px]:flex transition ease-[cubic-bezier(0.68,-0.3,0.32,1)] data-[closed]:opacity-0 data-[enter]:duration-700 data-[enter]:data-[closed]:-translate-x-8 data-[closed]:absolute data-[leave]:duration-300 data-[leave]:data-[closed]:translate-x-12">
+        <div className="w-80 md:w-96">
+            <div className="[background:linear-gradient(45deg,#FFFFFF,theme(colors.white)_50%,#FFFFFF)_padding-box,conic-gradient(from_var(--border-angle),theme(colors.white)_80%,_theme(colors.accent)_86%,_theme(colors.accent)_90%,_theme(colors.accent)_94%,_theme(colors.white))_border-box] border border-transparent animate-border w-80 md:w-96 items-stretch rounded-2xl bg-white shadow-xl focus-visible:outline-none focus-visible:ring focus-visible:ring-accent min-[480px]:flex transition ease-[cubic-bezier(0.68,-0.3,0.32,1)] data-[closed]:opacity-0 data-[enter]:duration-700 data-[enter]:data-[closed]:-translate-x-8 data-[closed]:absolute data-[leave]:duration-300 data-[leave]:data-[closed]:translate-x-12">
                 <div className="flex-1 flex flex-col p-6">
                     <div className="flex-1">
                         <header className="my-4 relative">
                             {title.split(" ").map((x, index) => (
                                 <div key={index} className="relative">
-                                    <h2 className="pl-2 text-4xl font-semibold tracking-tighter">{x}</h2>
+                                    <h2 className="pl-2 text-3xl md:text-4xl font-semibold tracking-tighter">{x}</h2>
                                     <span className="absolute -left-1 bottom-[0.4375rem] h-[0.0625rem] bg-black w-[16rem]"></span>
-                                    <span className="absolute left-[0.58rem] bottom-[0rem] h-[3rem] bg-black w-[0.0625rem]"></span>
+                                    <span className="absolute left-[0.58rem] bottom-0 h-10 md:h-12 bg-black w-[0.0625rem]"></span>
                                 </div>
                             ))}
-                                <div className="absolute -top-6 right-0 w-32 flex justify-center items-center">
-                                    <div className="rounded-[8rem] border border-black h-32 w-32 bg-white z-10 flex justify-center items-center">
-                                        <p className="text-6xl font-serif font-bold bg-gradient-to-r from-black via-[#682D6A] via-30% to-[#BD19C2] bg-clip-text text-transparent">{unit}</p>
+                                <div className="absolute -top-4 md:-top-6 right-0 w-24 md:w-32 flex justify-center items-center">
+                                    <div className="rounded-[8rem] border border-black w-24 h-24 md:h-32 md:w-32 bg-white z-10 flex justify-center items-center">
+                                        <p className="text-5xl md:text-6xl font-serif font-bold bg-gradient-to-r from-black via-[#682D6A] via-30% to-[#BD19C2] bg-clip-text text-transparent">{unit}</p>
                                     </div>
                                 </div>
-                                <span className="absolute right-16 -top-[2.5rem] h-4 bg-black w-[0.0625rem]"></span>
+                                <span className="absolute right-12 md:right-16 -top-10 h-6 bg-black w-[0.0625rem]"></span>
                         </header>
-                        <div className="font-serif text-2xl tracking-tighter mt-14 mb-10">
+                        <div className="font-serif text-xl md:text-2xl tracking-tighter mt-14 mb-10">
                             <p>{children}</p>
                         </div>
                     </div>
@@ -74,17 +74,21 @@ export default function SubjectCard({title, unit, time, points, children}: {titl
 
                         {/* Modal Content */}
                         <div className="fixed inset-0 z-50 flex items-center justify-center">
-                            <div className="bg-white rounded-lg pt-12 px-12 pb-10 shadow-xl max-w-2xl mx-auto">
+                            <div className="bg-white rounded-lg pt-12 px-12 pb-10 shadow-xl max-w-xs md:max-w-2xl mx-auto">
                                 <div className="relative w-fit">
 
-                                    <h2 className="text-5xl tracking-tighter font-bold mb-4">{title + " " + unit}</h2>
-                                    <span className="absolute -left-4 bottom-[6px] h-[0.0625rem] bg-black w-[24rem]"></span>
-                                    <span className="absolute -right-8 bottom-[6px] h-[0.0625rem] bg-black w-[16rem]"></span>
+                                    <h2 className="hidden md:block text-5xl tracking-tighter font-bold mb-4">{title + " " + unit}</h2>
+                                    <div className="md:hidden text-4xl tracking-tighter font-bold mb-4">
+                                        <h2>{title.split(" ")[0]}</h2>
+                                        <h2>{title.split(" ")[1]}</h2>
+                                    </div>
+                                    <span className="absolute -left-4 bottom-2 md:bottom-[6px] h-[0.0625rem] bg-black w-64 md:w-96"></span>
+                                    <span className="hidden md:block absolute -right-8 bottom-[6px] h-[0.0625rem] bg-black w-64"></span>
                                 </div>
 
-                                <h3 className="font-semibold text-2xl tracking-tighter mb-2">{time}*</h3>
+                                <h3 className="font-semibold text-xl md:text-2xl tracking-tighter mb-2">{time}*</h3>
                                 
-                                <ul className="mb-2 font-serif text-xl tracking-tighter list-disc pl-4">
+                                <ul className="mb-2 font-serif text-lg md:text-xl tracking-tighter list-disc pl-4">
                                 {points.map((x, index) => (
                                     <li key={index}>{allPoints[x]}</li>
                                 ))}

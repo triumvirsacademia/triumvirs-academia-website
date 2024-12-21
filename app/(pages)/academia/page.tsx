@@ -28,30 +28,30 @@ export default function Academia() {
                     <p className="text-2xl font-medium tracking-tighter mb-4 w-[60vw] 3xl:w-[72rem]">We are starting the week <C>beginning</C> the 13th of January, and hope to wrap up content around the winter holidays, so you can <C>efficiently</C> learn all the content whilst saving time to <C>savour</C> all the fun Year 12 has to bring.</p>
                 </div>
             </section>
-            <section className="mb-8 py-16" id="mathematics">
-                <div className="flex justify-center items-center h-32 my-16">
+            <section className="mb-8 py-8 md:py-16" id="mathematics">
+                <div className="flex justify-center items-center h-32 my-8 md:my-16">
                     <div className="relative">
-                        <h2 className="text-7xl font-bold tracking-tighter">Mathematics</h2>
-                        <span className="absolute -right-8 bottom-[0.625rem] h-[0.0625rem] bg-black w-[32rem]"></span>
-                        <span className="absolute -right-[0.125rem] -bottom-4 h-24 bg-black w-[0.0625rem]"></span>
+                        <h2 className="text-5xl md:text-7xl font-bold tracking-tighter">Mathematics</h2>
+                        <span className="absolute -right-8 bottom-[7px] md:bottom-[10px] h-[0.0625rem] bg-black w-80 md:w-[30rem]"></span>
+                        <span className="absolute -right-[1px] md:-right-[2px] -bottom-2 md:-bottom-4 h-16 md:h-24 bg-black w-[0.0625rem]"></span>
                     </div>
-                    <div className="w-[40vw]"></div>
+                    <div className="md:w-[40vw]"></div>
                 </div>
-                <div className="max-w-xs mx-auto grid gap-6 lg:grid-cols-3 items-start lg:max-w-7xl">
+                <div className="max-w-xs mx-auto grid gap-6 grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 items-start lg:max-w-3xl xl:max-w-7xl">
                     <SubjectCard title="Specialist Mathematics" unit="3/4" time="Sunday 1:30pm-3:30pm" points={[0,1,2,3,4,5]}>Mainly taught by Joel Cheok and Jerry Jin. Also suitable for advanced Unit 1/2 students.</SubjectCard>
                     <SubjectCard title="Mathematical Methods" unit="3/4" time="Saturday 1:30pm-3:30pm" points={[0,1,2,3,4,5]}>Taught by Joel Cheok, Jerry Jin and Chris Lu. Also suitable for advanced Unit 1/2 students.</SubjectCard>
                 </div>
             </section>
-            <section className="mb-8 py-16" id="science">
-                <div className="flex justify-center items-center h-32 my-16">
+            <section className="mb-8 py-8 md:py-16" id="science">
+                <div className="flex justify-center items-center h-32 my-8 md:my-16">
                     <div className="relative">
-                        <h2 className="text-7xl font-bold tracking-tighter">Science</h2>
-                        <span className="absolute -right-8 bottom-[0.625rem] h-[0.0625rem] bg-black w-96"></span>
-                        <span className="absolute -right-[0.125rem] -bottom-4 h-24 bg-black w-[0.0625rem]"></span>
+                        <h2 className="text-5xl md:text-7xl font-bold tracking-tighter">Science</h2>
+                        <span className="absolute -right-8 bottom-[7px] md:bottom-[10px] h-[0.0625rem] bg-black w-56 md:w-[20rem]"></span>
+                        <span className="absolute -right-[1px] md:-right-[2px] -bottom-2 md:-bottom-4 h-16 md:h-24 bg-black w-[0.0625rem]"></span>
                     </div>
-                    <div className="w-[40vw]"></div>
+                    <div className="md:w-[40vw]"></div>
                 </div>
-                <div className="max-w-xs mx-auto grid gap-6 lg:grid-cols-3 items-start lg:max-w-7xl">
+                <div className="max-w-xs mx-auto grid gap-6 grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 items-start lg:max-w-3xl xl:max-w-7xl">
                     <SubjectCard title="VCE Biology" unit="3/4" time="Monday 6:30pm-8:30pm" points={[0,1,3,4,5]}>Taught by Joel Cheok (International Biology Olympiad Silver Medallist, RAW 50).</SubjectCard>
                     <SubjectCard title="VCE Chemistry" unit="3/4" time="Tuesday 6:30pm-8:30pm" points={[0,1,3,4,5]}>Taught by Jerry Jin and Joel Cheok. Also suitable for advanced Unit 1/2 students.</SubjectCard>
                     <SubjectCard title="VCE Physics" unit="3/4" time="Wednesday 6:30pm-8:30pm" points={[0,1,3,4,5]}>Taught by Joel Cheok and Jerry Jin. Also suitable for advanced Unit 1/2 students.</SubjectCard>
@@ -59,16 +59,16 @@ export default function Academia() {
                     <SubjectCard title="Olympiad Chemistry" unit="EX" time="Enquire for more" points={[6]}>Taught by Jerry Jin for Year 11s and below. Also suitable for non-VCE students.</SubjectCard>
                 </div>
             </section>
-            <section className="mb-8 py-16" id="other">
-                <div className="flex justify-center items-center h-32 my-16">
+            <section className="mb-8 py-8 md:py-16" id="other">
+                <div className="flex justify-center items-center h-32 my-8 md:my-16">
                     <div className="relative">
-                        <h2 className="text-7xl font-bold tracking-tighter">Other</h2>
-                        <span className="absolute -right-8 bottom-[0.625rem] h-[0.0625rem] bg-black w-64"></span>
-                        <span className="absolute -right-[0.1875rem] -bottom-4 h-24 bg-black w-[0.0625rem]"></span>
+                        <h2 className="text-5xl md:text-7xl font-bold tracking-tighter">Other</h2>
+                        <span className="absolute -right-8 bottom-[7px] md:bottom-[10px] h-[0.0625rem] bg-black w-44 md:w-[16rem]"></span>
+                        <span className="absolute -right-[1px] md:-right-[3px] -bottom-2 md:-bottom-4 h-16 md:h-24 bg-black w-[0.0625rem]"></span>
                     </div>
-                    <div className="w-[40vw]"></div>
+                    <div className="md:w-[40vw]"></div>
                 </div>
-                <div className="max-w-xs mx-auto grid gap-6 grid-cols-1 md:grid-cols-2 md:max-w-xl lg:grid-cols-3 items-start lg:max-w-7xl">
+                <div className="max-w-xs mx-auto grid gap-6 grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 items-start lg:max-w-3xl xl:max-w-7xl">
                     <SubjectCard title="VCE English" unit="3/4" time="Thursday 6:30pm-8:30pm" points={[0,1,3,4,5]}>Taught by Chris Lu (only Section B and C). Also suitable for all Unit 1/2 students.</SubjectCard>
                     <SubjectCard title="SAT Preparation" unit="EX" time="Complimentary" points={[7]}>Taught by Chris Lu (1570) and Jerry Jin (1590). Complimentary advice with other subjects.</SubjectCard>
                 </div>
