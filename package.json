@@ -11,6 +11,7 @@
   "dependencies": {
     "@headlessui/react": "^2.2.0",
     "@notionhq/client": "^2.2.15",
+    "@vercel/analytics": "^1.4.1",
     "next": "15.0.2",
     "npm": "^11.0.0",
     "react": "19.0.0-rc-02c0e824-20241028",
