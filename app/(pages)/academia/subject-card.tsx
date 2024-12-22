@@ -82,7 +82,7 @@ export default function SubjectCard({title, unit, time, points, children}: {titl
                                         <h2>{title.split(" ")[0]}</h2>
                                         <h2>{title.split(" ")[1]}</h2>
                                     </div>
-                                    <span className="absolute -left-4 bottom-2 md:bottom-[6px] h-[0.0625rem] bg-black w-64 md:w-96"></span>
+                                    <span className="absolute -left-4 bottom-[7px] md:bottom-[6px] h-[0.0625rem] bg-black w-64 md:w-96"></span>
                                     <span className="hidden md:block absolute -right-8 bottom-[6px] h-[0.0625rem] bg-black w-64"></span>
                                 </div>
 
