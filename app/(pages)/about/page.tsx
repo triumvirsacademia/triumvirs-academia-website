@@ -22,7 +22,7 @@ export default function About() {
             },
             extra: {
                 "International Biology Olympiad": "Silver",
-                "AMC": "Medal (Perfect Score)",
+                "AMC": "Medal",
             },
         },
         {
