@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import SubjectList from "./subject-list"
+import Footer from "./footer"
 
 export default function Home() {
     return (
@@ -75,7 +76,31 @@ export default function Home() {
             <div className="flex justify-center items-center py-16">
                 <iframe className="w-[calc(100vw-2rem)] aspect-video md:w-[64vw]" src="https://www.youtube.com/embed/pf8DL67PGK4?si=SgcNgYk6rJDDxCDf" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
             </div>
+            <section className="relative h-[36rem] md:h-[48rem]">
+                <div className="absolute flex justify-center top-32 w-screen">
+                    <div className="relative text-7xl md:text-[9rem] font-bold tracking-tighter">
+                        About
+                        <span className="absolute -right-10 md:-right-16 bottom-[10px] md:bottom-5 h-[1px] bg-black w-64 md:w-[32rem]"></span>
+                        <span className="absolute -right-[3px] -bottom-3 md:-bottom-5 h-24 md:h-[10.5rem] bg-black w-[0.0625rem]"></span>
+                    </div>
+                    <div className='w-0 md:w-[5vw] lg:w-[10vw] xl:w-[20vw]'></div>
+                </div>
+                <div className="relative top-56 md:top-96 w-full max-w-6xl mx-auto px-4 md:px-6">
+                    <div className="flex flex-col text-2xl md:text-4xl tracking-tighter gap-2 md:gap-4">
+                        <div><span className="font-serif font-normal">3.</span> Camberwell Grammar duxes</div>
+                        <div><span className="font-serif font-normal">2.</span> International Olympians in Biology and Chemistry</div>
+                        <div><span className="font-serif font-normal">1.</span> Final goal: to guide you on your academic journey through Year 12, so you can spend more time on the things you enjoy the most.</div>
+                        <Link className="font-serif font-normal flex justify-end items-center hover:text-accent" href="/about">
+                            - Joel, Jerry and Chris
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="size-6 md:size-12 pt-1">
+                                <path fillRule="evenodd" d="M6.22 4.22a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06L8.94 8 6.22 5.28a.75.75 0 0 1 0-1.06Z" clipRule="evenodd" />
+                            </svg>
+                        </Link>
+                    </div>
+                </div>
+            </section>
             <SubjectList />
+            <Footer />
         </>
     )
 }

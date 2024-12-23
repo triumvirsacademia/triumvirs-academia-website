@@ -5,11 +5,11 @@ export default function Footer() {
         <div className="md:flex md:justify-between">
 
             <div className="flex flex-col md:flex-row items-center md:justify-start md:pl-16 gap-4 py-8 md:py-16 font-serif text-xl tracking-tighter">
-                <Link className="hover:text-accent" href="/">Triumvirs Academia</Link>
+                <Link className="hover:text-accent" href="/contact">Contact Us</Link>
+                <Link className="hover:text-accent" href="/faq">FAQ</Link>
                 <Link className="hover:text-accent" href="/terms-of-service">Terms of Service</Link>
                 <Link className="hover:text-accent" href="/privacy-policy">Privacy Policy</Link>
                 <Link className="hover:text-accent" href="/returns-policy">Returns Policy</Link>
-                <Link className="hover:text-accent" href="/faq">FAQ</Link>
             </div>
             <div className="flex flex-row items-center justify-center md:justify-end md:pr-16 gap-4 pb-16 md:pt-16 font-serif text-xl tracking-tighter">
                 <Link className="hover:text-accent" href="https://discord.gg/BMAfsbaHdW">
