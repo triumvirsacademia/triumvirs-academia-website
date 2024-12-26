@@ -11,7 +11,7 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        accent: '#74A1C4',
+        accent: '#5481A4',
       },
       fontFamily: {
         sans: ['var(--font-sf-pro)'],
