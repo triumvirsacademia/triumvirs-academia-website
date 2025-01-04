@@ -87,7 +87,7 @@ export default function Home() {
                 </div>
                 <div className="relative top-56 md:top-96 w-full max-w-6xl mx-auto px-4 md:px-6">
                     <div className="flex flex-col text-2xl md:text-4xl tracking-tighter gap-2 md:gap-4">
-                        <div><span className="font-serif font-normal">3</span> Camberwell Grammar duxes</div>
+                        <div><span className="font-serif font-normal">3</span> Camberwell Grammar duxes (2024)</div>
                         <div><span className="font-serif font-normal">2</span> International Olympians in Biology and Chemistry</div>
                         <div><span className="font-serif font-normal">1</span> Final goal: to guide you on your academic journey through Year 12, so you can spend more time on the things you enjoy the most.</div>
                         <Link className="font-serif font-normal flex justify-end items-center hover:text-accent" href="/about">

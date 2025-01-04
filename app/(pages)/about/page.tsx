@@ -84,7 +84,7 @@ export default function About() {
                 <div className="flex flex-col justify-center items-center text-2xl font-medium tracking-tighter">
                     <p className="mb-4 w-[80vw] md:w-[60vw] 3xl:w-[72rem]">Triumvirs Academia is run by <C>students</C> for <C>students</C>. We hope to bring a <C>new</C> understanding to what learning entails. <C>Gone</C> are the days of messy resources, confusing money-back guarantees and tutors who take all the credit for the good outcomes, and push the blame for bad outcomes onto students.</p>
                     <p className="mb-4 w-[80vw] md:w-[60vw] 3xl:w-[72rem]">The best thing to know is that we were in the <C>same</C> position you are in right now. We are here to guide you through it <C>effortlessly</C>, so that you not only hit those academic targets, but are set up for a <C>fulfilling</C> end to high school and a <C>proper</C> start to adulthood.</p>
-                    <p className="mb-4 w-[80vw] md:w-[60vw] 3xl:w-[72rem]">Below are our ATARs, study scores and some extra things on the side. We hope we are <C>guides</C> not only for VCE, but for the <C>other</C> parts of life students tend to forget about.</p>
+                    <p className="mb-4 w-[80vw] md:w-[60vw] 3xl:w-[72rem]">We graduated in <C>2024</C> and below are our ATARs, study scores and some extra things on the side. We hope we are <C>guides</C> not only for VCE, but for the <C>other</C> parts of life students tend to forget about.</p>
                 </div>
             </section>
             <Triumvirs triumvir={triumvirs[0]} />
