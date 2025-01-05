@@ -56,7 +56,6 @@ export default function Academia() {
                     <SubjectCard title="VCE Biology" unit="3/4" time="Monday 6:30pm-8:30pm" points={[0,1,3,4,5]}>Taught by Joel Cheok (International Biology Olympiad Silver Medallist, RAW 50).</SubjectCard>
                     <SubjectCard title="VCE Chemistry" unit="3/4" time="Tuesday 6:30pm-8:30pm" points={[0,1,3,4,5]}>Taught by Jerry Jin and Joel Cheok. Also suitable for advanced Unit 1/2 students.</SubjectCard>
                     <SubjectCard title="VCE Physics" unit="3/4" time="Wednesday 6:30pm-8:30pm" points={[0,1,3,4,5]}>Taught by Joel Cheok and Jerry Jin. Also suitable for advanced Unit 1/2 students.</SubjectCard>
-                    <SubjectCard title="Olympiad Biology" unit="EX" time="Enquire for more" points={[6]}>Taught by Joel Cheok for Year 11s and below. Also suitable for non-VCE students.</SubjectCard>
                     <SubjectCard title="Olympiad Chemistry" unit="EX" time="Enquire for more" points={[6]}>Taught by Jerry Jin for Year 11s and below. Also suitable for non-VCE students.</SubjectCard>
                 </div>
             </section>

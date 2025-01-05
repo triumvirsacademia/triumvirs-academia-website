@@ -19,7 +19,6 @@ const SignUpForm = () => {
     "Biology 3/4",
     "Chemistry 3/4",
     "Physics 3/4",
-    "Biology Olympiad",
     "Chemistry Olympiad",
     "SAT Preparation",
   ]
