@@ -17,7 +17,7 @@ export async function GET(request: Request) {
   try {
     const session = await stripe.checkout.sessions.retrieve(session_id);
     return NextResponse.json(session);
-  } catch (err: any) {
+  } catch (err: unknown) {
      if (err instanceof Error) {
       console.error(err.message);
       return NextResponse.json({ error: err.message }, { status: 500 });
