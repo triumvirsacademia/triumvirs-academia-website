@@ -2,6 +2,13 @@
 import { NextResponse } from 'next/server';
 import Stripe from 'stripe';
 
+interface CartItem {
+    name: string;
+    image: string; // URL of the product image
+    price: number; // Price in dollars (will be converted to cents for Stripe)
+    quantity: number;
+  }
+
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string, {
   apiVersion: '2025-01-27.acacia',
 });
@@ -11,7 +18,7 @@ export async function POST(request: Request) {
     const { items } = await request.json();
 
     // Transform cart items to Stripe line items
-    const lineItems = items.map((item: any) => ({
+    const lineItems = items.map((item: CartItem) => ({
       price_data: {
         currency: 'usd',
         product_data: {
@@ -32,8 +39,15 @@ export async function POST(request: Request) {
     });
 
     return NextResponse.json({ id: session.id });
-  } catch (err: any) {
+  } catch (err: unknown) {
     console.error(err);
-    return NextResponse.json({ error: err.message }, { status: 500 });
+    if (err instanceof Error) {
+        console.error(err.message);
+        return NextResponse.json({ error: err.message }, { status: 500 });
+      }
+  
+      // Handle unexpected error types
+      console.error('Unexpected Error:', err);
+      return NextResponse.json({ error: 'An unexpected error occurred.' }, { status: 500 });
   }
 }

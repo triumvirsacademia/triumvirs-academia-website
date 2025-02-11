@@ -4,13 +4,11 @@
 import React from 'react';
 import { useCart } from '../UseCart';
 import { loadStripe } from '@stripe/stripe-js';
-import { useRouter } from 'next/navigation';
 
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY as string);
 
 const CartPage: React.FC = () => {
   const { cart, removeFromCart, clearCart } = useCart();
-  const router = useRouter();
 
   const total = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
 

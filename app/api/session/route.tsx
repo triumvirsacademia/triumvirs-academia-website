@@ -18,7 +18,13 @@ export async function GET(request: Request) {
     const session = await stripe.checkout.sessions.retrieve(session_id);
     return NextResponse.json(session);
   } catch (err: any) {
-    console.error(err);
-    return NextResponse.json({ error: err.message }, { status: 500 });
+     if (err instanceof Error) {
+      console.error(err.message);
+      return NextResponse.json({ error: err.message }, { status: 500 });
+    }
+
+    // Handle unexpected error types
+    console.error('Unexpected Error:', err);
+    return NextResponse.json({ error: 'An unexpected error occurred.' }, { status: 500 });
   }
 }
