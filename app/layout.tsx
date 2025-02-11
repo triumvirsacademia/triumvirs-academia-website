@@ -3,6 +3,8 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { CartProvider } from "./(pages)/resources/UseCart";
+import Cart from "./cart";
 
 export const metadata: Metadata = {
   title: "Triumvirs Academia",
@@ -26,12 +28,16 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang="en" suppressHydrationWarning>
       <body
         className={`${SFPro.variable} ${NewYork.variable} font-sans antialiased bg-white`}
       >
+        <CartProvider>
         {children}
+        <Cart />
+        </CartProvider>
       </body>
       <Analytics />
       <SpeedInsights />

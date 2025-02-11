@@ -1,4 +1,11 @@
+'use client'
+
+import ProductCard from './ProductCard';
+import { products } from './Products';
+import { Product } from './Product';
+
 export default function Resources() {
+    
     return (
         <div>
             <div className="mb-8 md:mb-16">
@@ -20,6 +27,21 @@ export default function Resources() {
                     <div className="w-[5vw]"></div>
                 </div>
             </div>
+            <main className="container mx-auto p-4">
+                <div className="flex justify-center items-center h-32 my-8 md:my-16">
+                    <div className="relative">
+                        <h2 className="text-5xl md:text-7xl font-bold tracking-tighter">Notes</h2>
+                        <span className="absolute -right-8 bottom-[7px] md:bottom-[10px] h-[0.0625rem] bg-black w-44 md:w-[16rem]"></span>
+                        <span className="absolute -right-[1px] md:-right-[3px] -bottom-2 md:-bottom-4 h-16 md:h-24 bg-black w-[0.0625rem]"></span>
+                    </div>
+                    <div className="md:w-[40vw]"></div>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    {products.map((product: Product) => (
+                    <ProductCard key={product.id} product={product} />
+                    ))}
+                </div>
+            </main>
         </div>
     )
 }
