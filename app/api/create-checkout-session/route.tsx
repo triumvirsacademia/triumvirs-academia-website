@@ -20,7 +20,7 @@ export async function POST(request: Request) {
     // Transform cart items to Stripe line items
     const lineItems = items.map((item: CartItem) => ({
       price_data: {
-        currency: 'usd',
+        currency: 'aud',
         product_data: {
           name: item.name,
           images: [item.image],
