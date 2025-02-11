@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Stripe from 'stripe';
+import { Suspense } from 'react';
 
 const SuccessPage: React.FC = () => {
   const searchParams = useSearchParams();
@@ -24,10 +25,12 @@ const SuccessPage: React.FC = () => {
   if (!session) return <p>Loading...</p>;
 
   return (
-    <div className="container mx-auto p-4">
-      <h1 className="text-3xl font-bold">Payment Successful!</h1>
-      <p>Thank you for your purchase.</p>
-    </div>
+    <Suspense>
+      <div className="container mx-auto p-4">
+        <h1 className="text-3xl font-bold">Payment Successful!</h1>
+        <p>Thank you for your purchase.</p>
+      </div>
+    </Suspense>
   );
 };
 
