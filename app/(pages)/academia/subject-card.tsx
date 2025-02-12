@@ -36,7 +36,7 @@ export default function SubjectCard({title, unit, time, points, children}: {titl
                             ))}
                                 <div className="absolute -top-4 md:-top-6 right-0 w-24 md:w-32 flex justify-center items-center">
                                     <div className="rounded-[8rem] border border-black w-24 h-24 md:h-32 md:w-32 bg-white z-10 flex justify-center items-center">
-                                        <p className="tracking-tighter text-5xl md:text-6xl font-serif font-bold bg-gradient-to-r from-black via-[#682D6A] via-30% to-[#BD19C2] bg-clip-text text-transparent">{unit}</p>
+                                        <p className="p-1 tracking-tighter text-5xl md:text-6xl font-serif font-bold bg-gradient-to-r from-black via-[#682D6A] via-30% to-[#BD19C2] bg-clip-text text-transparent">{unit}</p>
                                     </div>
                                 </div>
                                 <span className="absolute right-12 md:right-16 -top-10 h-6 bg-black w-[0.0625rem]"></span>

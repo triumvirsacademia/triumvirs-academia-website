@@ -27,21 +27,49 @@ export default function Resources() {
                     <div className="w-[5vw]"></div>
                 </div>
             </div>
+            <section>
+                <div className="flex flex-col justify-center items-center text-2xl font-medium tracking-tighter">
+                    <p className="mb-4 w-[80vw] md:w-[60vw] 3xl:w-[72rem]">We offer a <C>wide</C> variety of subjects (taught in small groups), so that you can have the most <C>consistent</C> experience across all your studies.</p>
+                    <p className="mb-4 w-[80vw] md:w-[60vw] 3xl:w-[72rem]">Each VCE subject will be offered at <C>$40/hour</C>, with further enquiries about the Olympiad courses, whilst the SAT preparation is <C>complimentary</C> with subjects.</p>
+                    <p className="mb-4 w-[80vw] md:w-[60vw] 3xl:w-[72rem]">We are starting the week <C>beginning</C> the <C>13th of January 2025</C>, and hope to wrap up content around the winter holidays, so you can <C>efficiently</C> learn all the content whilst saving time to <C>savour</C> all the fun Year 12 has to bring.</p>
+                </div>
+            </section>
             <main className="container mx-auto p-4">
-                <div className="flex justify-center items-center h-32 my-8 md:my-16">
-                    <div className="relative">
-                        <h2 className="text-5xl md:text-7xl font-bold tracking-tighter">Notes</h2>
-                        <span className="absolute -right-8 bottom-[7px] md:bottom-[10px] h-[0.0625rem] bg-black w-44 md:w-[16rem]"></span>
-                        <span className="absolute -right-[1px] md:-right-[3px] -bottom-2 md:-bottom-4 h-16 md:h-24 bg-black w-[0.0625rem]"></span>
+                <section className='mb-8 py-8 md:py-16'>
+                    <div className="flex justify-center items-center h-32 my-8 md:my-16">
+                        <div className="relative">
+                            <h2 className="text-5xl md:text-7xl font-bold tracking-tighter">Notes</h2>
+                            <span className="absolute -right-8 bottom-[7px] md:bottom-[10px] h-[0.0625rem] bg-black w-44 md:w-[16rem]"></span>
+                            <span className="absolute -right-[1px] md:-right-[2px] -bottom-2 md:-bottom-4 h-16 md:h-24 bg-black w-[0.0625rem]"></span>
+                        </div>
+                        <div className="md:w-[40vw]"></div>
                     </div>
-                    <div className="md:w-[40vw]"></div>
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    {products.map((product: Product) => (
-                    <ProductCard key={product.id} product={product} />
-                    ))}
-                </div>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        {products.filter((product: Product) => product.id.substring(0,4) === 'note').map((product: Product) => (
+                        <ProductCard key={product.id} product={product} />
+                        ))}
+                    </div>
+                </section>
+                <section className='mb-8 py-8 md:py-16'>
+                    <div className="flex justify-center items-center h-32 my-8 md:my-16">
+                        <div className="relative">
+                            <h2 className="text-5xl md:text-7xl font-bold tracking-tighter">English</h2>
+                            <span className="absolute -right-8 bottom-[7px] md:bottom-[10px] h-[0.0625rem] bg-black w-56 md:w-[20rem]"></span>
+                            <span className="absolute -right-[1px] md:right-0 -bottom-2 md:-bottom-4 h-16 md:h-24 bg-black w-[0.0625rem]"></span>
+                        </div>
+                        <div className="md:w-[40vw]"></div>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        {products.filter((product: Product) => product.id.substring(0,3) === 'eng').map((product: Product) => (
+                        <ProductCard key={product.id} product={product} />
+                        ))}
+                    </div>
+                </section>
             </main>
         </div>
     )
+}
+
+function C({children}: {children: React.ReactNode}) {
+    return(<span className="text-accent">{children}</span>)
 }
