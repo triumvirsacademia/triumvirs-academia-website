@@ -25,7 +25,7 @@ export const products: Product[] = [
   {
     id: 'prod_5',
     name: 'Photo of Chris',
-    price: 0,
+    price: 0.01,
   },
   // Add more products as needed
 ];
