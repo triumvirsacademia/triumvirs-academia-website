@@ -22,5 +22,10 @@ export const products: Product[] = [
     name: 'English AV Analysis',
     price: 40,
   },
+  {
+    id: 'prod_5',
+    name: 'Photo of Chris',
+    price: 0,
+  },
   // Add more products as needed
 ];
