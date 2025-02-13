@@ -1,7 +1,6 @@
 // components/ProductCard.tsx
 'use client';
 
-import React, { PureComponent } from 'react';
 import { Product } from './Product';
 import { useCart } from './UseCart';
 import { useState } from 'react';
