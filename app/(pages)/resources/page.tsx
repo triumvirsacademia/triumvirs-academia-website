@@ -31,9 +31,10 @@ export default function Resources() {
                 <div className="flex flex-col justify-center items-center text-2xl font-medium tracking-tighter">
                     <p className="mb-4 w-[80vw] md:w-[60vw] 3xl:w-[72rem]">PDF versions of all resources will be <C>emailed</C> within <C>1 business day</C>.</p>
                     <p className="mb-4 w-[80vw] md:w-[60vw] 3xl:w-[72rem]">Please note that resources are <C>watermarked</C>.</p>
+                    <p className="mb-4 w-[80vw] md:w-[60vw] 3xl:w-[72rem]"><C>Notes</C> are from Chris and Jerry; <C>English</C> is from Chris.</p>
                 </div>
             </section>
-            <main className="container mx-auto p-4">
+            <main className="">
                 <section className='mb-8 py-8 md:py-16'>
                     <div className="flex justify-center items-center h-32 my-8 md:my-16">
                         <div className="relative">
@@ -43,7 +44,7 @@ export default function Resources() {
                         </div>
                         <div className="md:w-[40vw]"></div>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
                         {products.filter((product: Product) => product.id.substring(0,4) === 'note').map((product: Product) => (
                         <ProductCard key={product.id} product={product} />
                         ))}
@@ -51,14 +52,14 @@ export default function Resources() {
                 </section>
                 <section className='mb-8 py-8 md:py-16'>
                     <div className="flex justify-center items-center h-32 my-8 md:my-16">
-                        <div className="relative">
-                            <h2 className="text-5xl md:text-7xl font-bold tracking-tighter">English</h2>
-                            <span className="absolute -right-8 bottom-[7px] md:bottom-[10px] h-[0.0625rem] bg-black w-56 md:w-[20rem]"></span>
-                            <span className="absolute -right-[1px] md:right-0 -bottom-2 md:-bottom-4 h-16 md:h-24 bg-black w-[0.0625rem]"></span>
-                        </div>
+                    <div className="relative">
+                        <h2 className="text-5xl md:text-7xl font-bold tracking-tighter">English</h2>
+                        <span className="absolute -right-8 bottom-[7px] md:bottom-[10px] h-[0.0625rem] bg-black w-56 md:w-[20rem]"></span>
+                        <span className="absolute -right-[1px] md:-right-[1px] -bottom-2 md:-bottom-4 h-16 md:h-24 bg-black w-[0.0625rem]"></span>
+                    </div>
                         <div className="md:w-[40vw]"></div>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
                         {products.filter((product: Product) => product.id.substring(0,3) === 'eng').map((product: Product) => (
                         <ProductCard key={product.id} product={product} />
                         ))}

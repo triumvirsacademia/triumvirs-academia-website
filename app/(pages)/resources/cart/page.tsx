@@ -37,7 +37,7 @@ const CartPage: React.FC = () => {
   };
 
   return (
-    <div className="container mx-auto">
+    <div className="">
       <div className="mb-8 md:mb-16">
                 <div className="flex justify-center items-center h-32 md:h-64 py-24 md:py-48 bg-white">
                     <div className="hidden md:block relative">
@@ -63,7 +63,7 @@ const CartPage: React.FC = () => {
         <div>
             {
                 cart.filter((product) => product.id.substring(0, 4) === 'note').length === 0 ? null
-                : <section className=''>
+                : <section className='container mx-auto'>
                     <div className="flex justify-center items-center h-32 my-8">
                         <div className="relative">
                             <h2 className="text-5xl md:text-7xl font-bold tracking-tighter">Notes</h2>
@@ -98,12 +98,12 @@ const CartPage: React.FC = () => {
                     <div className="flex justify-center items-center h-32 my-8">
                         <div className="relative">
                             <h2 className="text-5xl md:text-7xl font-bold tracking-tighter">English</h2>
-                            <span className="absolute -right-8 bottom-[7px] md:bottom-[10px] h-[0.0625rem] bg-black w-44 md:w-[16rem]"></span>
-                            <span className="absolute -right-[1px] md:-right-[2px] -bottom-2 md:-bottom-4 h-16 md:h-24 bg-black w-[0.0625rem]"></span>
+                            <span className="absolute -right-8 bottom-[7px] md:bottom-[10px] h-[0.0625rem] bg-black w-56 md:w-[20rem]"></span>
+                            <span className="absolute -right-[1px] md:-right-[1px] -bottom-2 md:-bottom-4 h-16 md:h-24 bg-black w-[0.0625rem]"></span>
                         </div>
                         <div className="md:w-[40vw]"></div>
                     </div>
-                    <ul>
+                    <ul className='container mx-auto'>
                         {cart.filter((product) => product.id.substring(0, 3) === 'eng').map((item) => (
                         <li key={item.id} className="flex justify-between items-center mb-4">
                             <div>
@@ -123,7 +123,7 @@ const CartPage: React.FC = () => {
                     </ul>
                 </section>
             }
-          <div className="mt-6">
+          <div className="mt-6 container mx-auto">
             <h2 className="text-2xl">Total: ${total}</h2>
             <button
               className="mt-4 ml-4 bg-gray-500 text-white px-4 py-2 rounded"
