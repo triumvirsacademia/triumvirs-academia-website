@@ -26,7 +26,6 @@ export default function Academia() {
                 <div className="flex flex-col justify-center items-center text-2xl font-medium tracking-tighter">
                     <p className="mb-4 w-[80vw] md:w-[60vw] 3xl:w-[72rem]">We offer a <C>wide</C> variety of subjects (taught in small groups), so that you can have the most <C>consistent</C> experience across all your studies.</p>
                     <p className="mb-4 w-[80vw] md:w-[60vw] 3xl:w-[72rem]">Each VCE subject will be offered at <C>$40/hour</C>, with further enquiries about the Olympiad courses, whilst the SAT preparation is <C>complimentary</C> with subjects.</p>
-                    <p className="mb-4 w-[80vw] md:w-[60vw] 3xl:w-[72rem]">We are starting the week <C>beginning</C> the <C>13th of January 2025</C>, and hope to wrap up content around the winter holidays, so you can <C>efficiently</C> learn all the content whilst saving time to <C>savour</C> all the fun Year 12 has to bring.</p>
                 </div>
             </section>
             <section className="mb-8 py-8 md:py-16" id="mathematics">
